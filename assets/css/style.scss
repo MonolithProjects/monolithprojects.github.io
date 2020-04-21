@@ -28,12 +28,18 @@ $header-bg-color-secondary: #102c3d !default;
 }
 
 .site-footer {
+  color: $header-heading-color;
+  text-align: center;
   background-color: $header-bg-color;
   background-image: url("https://monolithprojects.github.io/images/space-foot.jpg");
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 
   @include large {
     padding: 5rem 6rem;
