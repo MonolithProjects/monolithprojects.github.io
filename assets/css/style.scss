@@ -6,6 +6,26 @@ $header-bg-color-secondary: #102c3d !default;
 
 @import "{{ site.theme }}";
 
+.page-header {
+  background-color: $header-bg-color;
+  background-image: url("images/space.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  @include large {
+    padding: 5rem 6rem;
+  }
+
+  @include medium {
+    padding: 3rem 4rem;
+  }
+
+  @include small {
+    padding: 2rem 1rem;
+  }
+}
 
 .site-footer {
   color: $header-heading-color;
@@ -29,3 +49,5 @@ $header-bg-color-secondary: #102c3d !default;
     padding: 2rem 1rem;
   }
 }
+
+
