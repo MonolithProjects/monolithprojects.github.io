@@ -4,17 +4,12 @@
 @import "{{ site.theme }}";
 
 table {
-  // border: 1px solid #373737;
-  // margin-bottom: 10px;
-  // text-align: left;
+  border: 1px solid #373737;
+  margin-bottom: 10px;
+  text-align: left;
   display: block;
   overflow: auto;
   word-break: normal;
   word-break: keep-all; // For Firefox to horizontally scroll wider tables.
   -webkit-overflow-scrolling: touch;
-
-  td {
-    padding: 0.5rem 1rem;
-    border: 1px solid #373737;
-  }
  }
