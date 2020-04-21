@@ -1,12 +1,7 @@
 ---
 ---
+$header-heading-color: #fff !default;
+$header-bg-color: #159957 !default;
+$header-bg-color-secondary: #155799 !default;
 
 @import "{{ site.theme }}";
-
-table {
-  border: 1px solid #373737;
-  margin-bottom: auto;
-  text-align: left;
-  width: 100%;
-  overflow: auto;
- }
