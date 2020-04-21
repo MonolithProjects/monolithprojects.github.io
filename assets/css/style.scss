@@ -17,14 +17,14 @@ $header-bg-color-secondary: #102c3d !default;
   // border-top: solid 1px $hr-border-color;
 
   @include large {
-    font-size: 1rem;
+    padding: 5rem 6rem;
   }
 
   @include medium {
-    font-size: 1rem;
+    padding: 3rem 4rem;
   }
 
   @include small {
-    font-size: 0.9rem;
+    padding: 2rem 1rem;
   }
 }
