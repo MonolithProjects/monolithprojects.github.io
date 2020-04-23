@@ -1,6 +1,6 @@
 # Ansible roles
 
-This is the list of Ansible roles which i am maintaining.
+A list of Ansible roles which i am maintaining.
 
 |Role name|Version|Quality|GitHub Actions molecule test|
 |:--------|:------|-------|:---------------------------|
