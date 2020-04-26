@@ -1,6 +1,10 @@
-# Ansible roles
+# Dashboard
 
-A list of Ansible roles which i am maintaining.
+This dashboard displays 
+
+## Ansible roles
+
+List of actively maintained Ansible roles.
 
 |Role name|Version|Quality|GitHub Actions molecule test|
 |:--------|:------|-------|:---------------------------|
@@ -10,3 +14,27 @@ A list of Ansible roles which i am maintaining.
 |[system_update](https://galaxy.ansible.com/monolithprojects/system_update)|[![Last version](https://img.shields.io/github/v/release/MonolithProjects/ansible-system_update)](https://github.com/MonolithProjects/ansible-system_update)|[![Galaxy Quality](https://img.shields.io/ansible/quality/46110?style=flat&logo=ansible)](https://galaxy.ansible.com/monolithprojects/system_update)|[![GitHub Actions](https://github.com/MonolithProjects/ansible-system_update/workflows/molecule%20test/badge.svg?branch=master)](https://github.com/MonolithProjects/ansible-system_update/actions)|
 |[tfvars2facts](https://galaxy.ansible.com/monolithprojects/tfvars2facts)|[![Last version](https://img.shields.io/github/v/release/MonolithProjects/ansible-tfvars2facts)](https://github.com/MonolithProjects/ansible-tfvars2facts)|[![Galaxy Quality](https://img.shields.io/ansible/quality/45539?style=flat&logo=ansible)](https://galaxy.ansible.com/monolithprojects/tfvars2facts)|[![GitHub Actions](https://github.com/MonolithProjects/ansible-tfvars2facts/workflows/molecule%20test/badge.svg?branch=master)](https://github.com/MonolithProjects/ansible-tfvars2facts/actions)|
 |[user_management](https://galaxy.ansible.com/monolithprojects/user_management)|[![Last version](https://img.shields.io/github/v/release/MonolithProjects/ansible-user_management)](https://github.com/MonolithProjects/ansible-user_management)|[![Galaxy Quality](https://img.shields.io/ansible/quality/45539?style=flat&logo=ansible)](https://galaxy.ansible.com/monolithprojects/user_management)|[![GitHub Actions](https://github.com/MonolithProjects/ansible-user_management/workflows/Test%20build/badge.svg?branch=master)](https://github.com/MonolithProjects/ansible-user_management/actions)|
+---
+
+## Docker-compose
+
+List of docker-compose projects.
+
+|Project name|Dockerfile build test|
+|:-----------|:--------------------|
+|[hassio_docker-compose](https://github.com/MonolithProjects/hassio_docker-compose)|[![GitHub Actions](https://github.com/MonolithProjects/hassio_docker-compose/workflows/Test%20build/badge.svg)](https://github.com/MonolithProjects/hassio_docker-compose/actions)
+---
+
+## Docker images
+
+List of Docker images.
+
+|Image name|Dockerfile build test|
+|:---------|:--------------------|
+|[systemd-centos7](https://hub.docker.com/repository/docker/monolithprojects/systemd-centos7)|[![GitHub Actions](https://github.com/MonolithProjects/docker-systemd-centos7/workflows/Dockerfile%20test/badge.svg?branch=master)](https://github.com/MonolithProjects/docker-systemd-centos7/actions)|
+|[systemd-centos8](https://hub.docker.com/repository/docker/monolithprojects/systemd-centos8)|[![GitHub Actions](https://github.com/MonolithProjects/docker-systemd-centos8/workflows/Dockerfile%20test/badge.svg?branch=master)](https://github.com/MonolithProjects/docker-systemd-centos8/actions)|
+|[systemd-debian9](https://hub.docker.com/repository/docker/monolithprojects/systemd-debian9)|[![GitHub Actions](https://github.com/MonolithProjects/docker-systemd-debian9/workflows/Dockerfile%20test/badge.svg?branch=master)](https://github.com/MonolithProjects/docker-systemd-debian9/actions)|
+|[systemd-debian10](https://hub.docker.com/repository/docker/monolithprojects/systemd-debian10)|[![GitHub Actions](https://github.com/MonolithProjects/docker-systemd-debian10/workflows/Dockerfile%20test/badge.svg?branch=master)](https://github.com/MonolithProjects/docker-systemd-debian10/actions)|
+|[systemd-ubuntu16](https://hub.docker.com/repository/docker/monolithprojects/systemd-ubuntu16)|[![GitHub Actions](https://github.com/MonolithProjects/docker-systemd-ubuntu16/workflows/Dockerfile%20test/badge.svg?branch=master)](https://github.com/MonolithProjects/docker-systemd-ubuntu16/actions)|
+|[systemd-ubuntu18](https://hub.docker.com/repository/docker/monolithprojects/systemd-ubuntu18)|[![GitHub Actions](https://github.com/MonolithProjects/docker-systemd-ubuntu18/workflows/Dockerfile%20test/badge.svg?branch=master)](https://github.com/MonolithProjects/docker-systemd-ubuntu18/actions)|
+---
