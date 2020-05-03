@@ -1,4 +1,4 @@
-# Docker Container - part 1
+# Docker Container - Part 1 (Sk)
 
 V tomto seriali te by som chcel popísať, ako Docker vytvára kontainery.
 
