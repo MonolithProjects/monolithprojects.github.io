@@ -8,6 +8,6 @@ Zoznam blogov:
 {% for post in site.posts %}
   <li>
     <a href="{{ post.url }}">{{ post.title }}</a>
-    {{ post.excerpt | strip_html | strip_newlines | truncate: 156 }}
+    {{ post.excerpt | strip_html | truncate: 156 }}
   </li>
 {% endfor %}
