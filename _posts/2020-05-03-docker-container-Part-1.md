@@ -76,4 +76,6 @@ Clone flag je použitý `CLONE_NEWUSER`.
 
 ## A na záver
 
-Takže pre rekapituláciu prešiel som cez Network, Mount, IPC, UTS, PID a User namespaces. Niekedy nabudúce sa pozriem ako sa jailne proces kontajnera na root filesysteme (docker image) a na používanie cgroups.  
+Takže pre rekapituláciu prešiel som cez Network, Mount, IPC, UTS, PID a User namespaces. Niekedy nabudúce sa pozriem ako sa jailne proces kontajnera na root filesysteme (docker image) a na používanie cgroups.
+
+---

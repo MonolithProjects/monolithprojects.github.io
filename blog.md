@@ -6,7 +6,11 @@ But if it helps to you too, feel free to use the information in this blog anyhow
 Zoznam blogov:
 
 {% for post in site.posts %}
-{{ post.title }}
+
+- {{ post.title }}
+
 {% endfor %}
+
+---
 {% for post in site.posts | sort post.date %}
 {{ post.content }} {% endfor %}
