@@ -1,6 +1,6 @@
 # Dashboard
 
-This dashboard shows all my actively maintained projects.
+The Dashboard shows all my actively maintained projects.
 
 ## Ansible roles
 
