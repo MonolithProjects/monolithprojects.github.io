@@ -4,14 +4,14 @@ V tomto seriali te by som chcel popísať, ako Docker vytvára kontainery.
 
 ## Čo je to kontajner ?
 
-Myslím, že rôzne technológie, ktoré sa zaoberajú vytváraním kontajnerov sú dnes celkom bežné. Určite si už videl nejaké cool prezentácie o niečom čo sa volá Docker kde ti bolo jednoducho povedané, že Docker využíva namespaces, cgroups, chroot, atď. na vytváranie kontajnerov. Ale načo je toto všetko potrebné na vytvorenie kontajnera?
-Prečo to nieje jednoducho systémove volanie a hotovo? Pretože realita, že kontajnery neexistujú - sú vymyslené. Nič také ako "linux container" v kerneli nieje. Kontajner patri do oblasti user space a teda mimo kernelu.  
+Myslím, že rôzne technológie, ktoré sa zaoberajú vytváraním kontajnerov sú dnes celkom bežné. Dá sa dokonca povedať, že je okolo nich celkom pekný hype. Určite si už videl nejaké cool prezentácie o niečom čo sa volá Docker kde ti bolo jednoducho povedané, že Docker využíva namespaces, cgroups, chroot, atď. na vytváranie kontajnerov. Ale načo je toto všetko potrebné na vytvorenie kontajnera?
+Prečo to nieje jednoducho systémove volanie a hotovo? Pretože realita je taká, že kontajnery neexistujú - sú vymyslené. Nič také ako "linux container" v kerneli nieje. Kontajner patri do oblasti user space a teda mimo kernelu.  
 
 ## Namespaces
 
-Na začiatok si povieme ako vytvoriť Linux namespace aby bolo jasné ako sú použité v rámci Dockeru. A neskor sa pozrieme na to, ako sú namespaces kombinované so cgroups a izolovanými filsystémami na vytvorenie niečoho užitočného.  
+Na začiatok si povieme niečo o Linux namespace aby bolo jasné ako sú použité v rámci Dockeru. A neskor sa pozrieme na to, ako sú namespaces kombinované so cgroups a izolovanými filsystémami na vytvorenie niečoho užitočného.  
 
-Najskor by sme si mali povedať podstatu namespaces a načo sú užitočné. Namespace je funkcia Linux kernelu rozparticiovať rôzne resourcy do separatneho "priestoru", kde skupina resourcov (napríklad procesov) v jednom priestore/namespace vidi iba resourcy patriace do toho istého namespace. Linux kernel pozná niekoľko typov namespacov. Poďme sa na ne pozrieť.
+Najskor by by som mal povedať podstatu namespaces a načo sú užitočné. Namespace je funkcia Linux kernelu rozparticiovať rôzne resourcy do separatneho "priestoru", kde skupina resourcov (napríklad procesov) v jednom priestore/namespace vidi iba resourcy patriace do toho istého namespacu. Linux kernel pozná niekoľko typov namespacov. Kukneme sa na ne.
 
 ## NET Namespace
 
