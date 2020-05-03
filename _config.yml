@@ -1,4 +1,20 @@
-theme: jekyll-theme-cayman
-header: Satellite
 title: Satellite
+header: Satellite
+author: Michal Muransky
+email: mike.muransky@gmail.com
 description: Change is the essential process of all existence.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+linkedin_username: michal-muranský-02a56144
+github_username: monolithprojects
+permalink: /posts/:year-:month-:day-:title
+
+# google_analytics:
+
+# Build settings
+markdown: kramdown
+theme: jekyll-theme-cayman
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-redirect-from
