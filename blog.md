@@ -5,11 +5,11 @@ But if it helps to you too, feel free to use the information in this blog anyhow
 
 Zoznam blogov:
 
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
-  {% endfor %}
+{% for post in site.posts %}
+  <li>
+    <a href="{{ post.url }}">{{ post.title }}</a>
+  </li>
+{% endfor %}
 
 ---
 {% for post in site.posts | sort post.date %}
