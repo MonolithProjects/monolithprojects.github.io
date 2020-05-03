@@ -12,5 +12,12 @@ Zoznam blogov:
 {% endfor %}
 
 ---
-{% for post in site.posts | sort post.date %}
-{{ post.content }} {% endfor %}
+<!-- {% for post in site.posts | sort post.date %}
+{{ post.content }} {% endfor %} -->
+
+{% for post in site.posts %}
+  <li>
+    <a href="{{ post.url }}">{{ post.title }}</a>
+    {{ post.excerpt }}
+  </li>
+{% endfor %}
