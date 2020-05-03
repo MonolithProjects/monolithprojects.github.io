@@ -3,8 +3,6 @@ layout: post
 title:  "Docker Container - Part 1 (Sk)"
 ---
 
-# Docker Container - Part 1 (Sk)
-
 V tomto seriali by som chcel popísať, ako Docker vytvára kontainery.
 
 ## Čo je to kontajner ?
