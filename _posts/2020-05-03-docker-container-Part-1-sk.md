@@ -6,7 +6,7 @@ categories: [slovak]
 
 V tomto seriali by som chcel popísať, ako Docker vytvára kontainery.
 
-### Čo je to kontajner ?
+### Čo je to kontajner ????
 
 Dnes existujú rôzne technológie, ktoré sa zaoberajú vytváraním kontajnerov. Dá sa dokonca povedať, že je okolo nich celkom pekný hype. Určite si už videl nejaké cool prezentácie o niečom čo sa volá Docker kde ti bolo jednoducho povedané, že Docker využíva namespaces, cgroups, chroot, atď. na vytváranie kontajnerov. Ale načo je toto všetko potrebné na vytvorenie kontajnera?
 Prečo to nieje jednoducho systémove volanie a hotovo? Pretože realita je taká, že kontajnery neexistujú - sú vymyslené. Nič také ako "linux container" v kerneli nieje. Kontajner patri do oblasti user space a teda mimo kernelu.  
