@@ -6,13 +6,13 @@ categories: [english]
 
 Since the Fedora upgrade is a ceremony which i am doing every 6 months, and always forgetting how i did it, it's probably good idea to write it down and create kind of `cheat sheet`.
 
-## DNF System Upgrade
+### DNF System Upgrade
 
 Not so long time ago, theere were only two ways how to upgrade Fedora distro. Eather to reinstall it from the scratch, or use a special script and pray that everything will go right.  
 But these days we can do it more or less in the safe way and use DNF System Upgrade plugin. Anyway... every system upgrade is a potentially risky.
 So maybe it is not a bad idea to backup your data (i am not doing this coz i don't care).
 
-## Performing System Upgrade
+### Performing System Upgrade
 
 1. First run this command and reboot your computer:
 
