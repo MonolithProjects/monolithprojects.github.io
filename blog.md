@@ -5,9 +5,19 @@ But if it helps to you too, feel free to use the information in this blog anyhow
 
 List of the blogs:
 
-{% for post in site.posts %}
+<!-- {% for post in site.posts %}
   <li>
     <a href="{{ post.url }}">{{ post.title }}</a>
     {{ post.excerpt | strip_html | truncate: 156 }}
   </li>
+{% endfor %} -->
+
+{% for category in site.categories %}
+  <h3>{{ category[0] }}</h3>
+  <ul>
+    {% for post in category[1] %}
+      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+      {{ post.excerpt | strip_html | truncate: 156 }}
+    {% endfor %}
+  </ul>
 {% endfor %}

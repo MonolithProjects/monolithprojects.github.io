@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Docker Container - Part 1 (Sk)"
-tags: [sk, docker]
+title:  "Docker Container - Part 1"
+categories: [slovak, blog]
 ---
 
 V tomto seriali by som chcel popísať, ako Docker vytvára kontainery.
