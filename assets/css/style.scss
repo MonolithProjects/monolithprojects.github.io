@@ -49,3 +49,11 @@ $header-bg-color-secondary: #102c3d !default;
     padding: 2rem 1rem;
   }
 }
+
+.main-content {
+  img[src$="centerme"] {
+    display:block;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+}
