@@ -16,29 +16,29 @@ So maybe it is not a bad idea to backup your data (i am not doing this coz i don
 
 1. First run this command and reboot your computer:
 
-```bash
-sudo dnf upgrade --refresh
-```
+   ```bash
+   sudo dnf upgrade --refresh
+   ```
 
 2. Install the dnf-plugin-system-upgrade package if it is not currently installed:
 
-```bash
-sudo dnf install dnf-plugin-system-upgrade
-```
+   ```bash
+   sudo dnf install dnf-plugin-system-upgrade
+   ```
 
 3. Download the updated packages:
 
-```bash
-sudo dnf system-upgrade download --refresh --releasever=<your destination version>
-```
+   ```bash
+   sudo dnf system-upgrade download --refresh --releasever=<your destination version>
+   ```
 
 4. If some of your packages have unsatisfied dependencies, the upgrade will refuse to continue until you run it again with an extra `--allowerasing` option.  
 
 5. Run the upgrade process:
 
-```bash
-sudo dnf system-upgrade reboot
-```
+   ```bash
+   sudo dnf system-upgrade reboot
+   ```
 
 6. Success and profit :-)
 
