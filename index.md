@@ -2,7 +2,7 @@
 
 The Dashboard shows all my actively maintained projects.
 
-## Ansible roles
+### Ansible roles
 
 List of actively maintained Ansible roles. It includes the weekly `molecule test`.
 
@@ -17,7 +17,7 @@ List of actively maintained Ansible roles. It includes the weekly `molecule test
 
 ---
 
-## Docker-compose
+### Docker-compose
 
 List of docker-compose projects. It includes weekley `docker-compose up` test.
 
@@ -27,7 +27,7 @@ List of docker-compose projects. It includes weekley `docker-compose up` test.
 
 ---
 
-## Docker images
+### Docker images
 
 List of Docker images. It includes weekley `docker build` test.
 

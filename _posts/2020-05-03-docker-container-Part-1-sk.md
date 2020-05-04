@@ -74,7 +74,7 @@ root        11  0.0  0.0  17492  2060 pts/0    R+   16:19   0:00 ps aux
 
 ### USER Namespace
 
-Aby sa zabezpečila prevencia proti `privilege=escalation` útokom, je vhodné aplikáciu v kontajnery nakonfigurovať tak, aby používala neprivilegovaného usera. Ak to nieje možné a proces v kontajneri musí bežať ako `root` použi user namespace. Tento namespace zabezpečí, že môžeš mať užívateľov v rámci jedneho namespace ktorý niesú tí istí užívatelia mimo tohto namespace. To znamená, že vďaka user namespace, môže byť user `root` vramci kontajnera ale zároveň ako "neroot" na hoste. Toto je docielené vďaka UID a GID mapingu.  
+Aby sa zabezpečila prevencia proti `privilege-escalation` útokom, je vhodné aplikáciu v kontajnery nakonfigurovať tak, aby používala neprivilegovaného usera. Ak to nieje možné a proces v kontajneri musí bežať ako `root` použi user namespace. Tento namespace zabezpečí, že môžeš mať užívateľov v rámci jedneho namespace ktorý niesú tí istí užívatelia mimo tohto namespace. To znamená, že vďaka user namespace, môže byť user `root` vramci kontajnera ale zároveň ako "neroot" na hoste. Toto je docielené vďaka UID a GID mapingu.  
 
 Clone flag je použitý `CLONE_NEWUSER`.
 
