@@ -4,7 +4,7 @@ title:  "Fedora upgrade"
 categories: [english]
 ---
 
-Since the Fedora upgrade is a ceremony which i am doing every 6 months, and always forgetting how i did it, it's probably good idea to write it down and create kind of `cheat sheet`.
+Since the Fedora upgrade is a ceremony which i am doing every 6 months, and always forgetting how i did it, it's probably good idea to write it down and create a kind of `cheat sheet`.
 
 ### DNF System Upgrade
 
