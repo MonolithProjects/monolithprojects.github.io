@@ -4,7 +4,7 @@ title:  "How to install cyberghostvpn on Fedora 32"
 categories: [english]
 ---
 
-Currently the installation script for Cyber Ghost VPN client does not support Fedora 32. Since the `cyberghostvpn` client forks
+Currently the installation script for Cyber Ghost VPN client does not support Fedora 32. Since the `cyberghostvpn` client works
 on Fedora 32 just fine, let see how we can make the installation to work.  
 
 ### How to do it
