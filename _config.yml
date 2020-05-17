@@ -8,20 +8,24 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 linkedin_username: michal-muranský-02a56144
 github_username: monolithprojects
 permalink: /posts/:year-:month-:day-:title
-footer-links:
-  dribbble:
-  email:
-  facebook:
-  flickr:
+social-network-links:
+  email: "mike.muransky@gmail.com"
+  facebook: 
   github: monolithprojects
-  instagram:
-  linkedin:
-  pinterest:
-  rss: # just type anything here for a working RSS icon
-  twitter: MonolithSVK
-  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
-  youtube: # channel/<your_long_string> or user/<user-name>
-  googleplus: # anything in your profile username that comes after plus.google.com/
+#  reddit: yourname
+  linkedin: michal-muransky-02a56144
+#  xing: yourname
+#  stackoverflow: "3943160/daattali"
+#  snapchat: deanat78
+#  instagram: deanat78
+#  youtube: user/deanat78
+#  spotify: yourname
+#  telephone: +14159998888
+#  steam: deanat78
+#  twitch: yourname
+#  yelp: yourname
+#  telegram: yourname
+#  calendly: yourname
 
 # google_analytics:
 
