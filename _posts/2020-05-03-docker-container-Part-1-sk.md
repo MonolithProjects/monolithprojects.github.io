@@ -30,7 +30,7 @@ root@virt01:/containers# ip a
     inet6 ::1/128 scope host 
        valid_lft forever preferred_lft forever
 2: enp1s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
-    link/ether 52:54:00:fd:43:c0 brd ff:ff:ff:ff:ff:ff
+    link/ether 00:00:00:00:00:00 brd ff:ff:ff:ff:ff:ff
     inet 192.168.160.101/24 brd 192.168.160.255 scope global enp1s0
        valid_lft forever preferred_lft forever
     inet6 fe80::5054:ff:fefd:43c0/64 scope link 
