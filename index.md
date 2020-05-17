@@ -43,3 +43,11 @@ List of Docker images. It includes weekley `docker build` test.
 |[systemd-ubuntu20](https://hub.docker.com/repository/docker/monolithprojects/systemd-ubuntu20)|[![GitHub Actions](https://github.com/MonolithProjects/docker-systemd-ubuntu20/workflows/Dockerfile%20test/badge.svg?branch=master)](https://github.com/MonolithProjects/docker-systemd-ubuntu20/actions)|[![issues](https://img.shields.io/github/issues-raw/monolithprojects/docker-systemd-ubuntu20)](https://github.com/monolithprojects/docker-systemd-ubuntu20/issues)|[![pull requests](https://img.shields.io/github/issues-pr/monolithprojects/docker-systemd-ubuntu20)](https://github.com/monolithprojects/docker-systemd-ubuntu20/pulls)
 
 ---
+
+### GitHub Actions
+
+List of GitHub Actions in the [Marketplace](https://github.com/marketplace)
+
+|Marketplace Name|Latest release|Issues|Pull requests|
+|:---------|:-----------|------|-------------|
+|[Molecule for Ansible](https://github.com/marketplace/actions/molecule-for-ansible)|[![Last version](https://img.shields.io/github/v/release/monolithprojects/action-molecule)](https://github.com/MonolithProjects/action-molecule)|[![issues](https://img.shields.io/github/issues-raw/monolithprojects/action-molecule)](https://github.com/monolithprojects/action-molecule/issues)|[![pull requests](https://img.shields.io/github/issues-pr/monolithprojects/docker-systemd-ubuntu20)](https://github.com/monolithprojects/action-molecule/pulls)
