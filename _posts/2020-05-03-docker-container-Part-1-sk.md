@@ -6,7 +6,7 @@ categories: [slovak]
 
 V tomto seriali by som chcel popísať, ako Docker vytvára kontainery.
 
-### Čo je to kontajner ?
+### Čo je to kontajner
 
 Dnes existujú rôzne technológie, ktoré sa zaoberajú vytváraním kontajnerov. Dá sa dokonca povedať, že je okolo nich celkom pekný hype. Určite si už videl nejaké cool prezentácie o niečom čo sa volá Docker kde ti bolo jednoducho povedané, že Docker využíva namespaces, cgroups, chroot, atď. na vytváranie kontajnerov. Ale načo je toto všetko potrebné na vytvorenie kontajnera?
 Prečo to nieje jednoducho systémove volanie a hotovo? Pretože realita je taká, že kontajnery neexistujú - sú vymyslené. Nič také ako "linux container" v kerneli nieje. Kontajner patri do oblasti user space a teda mimo kernelu.  
@@ -27,19 +27,19 @@ root@virt01:/containers# ip a
     link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
     inet 127.0.0.1/8 scope host lo
        valid_lft forever preferred_lft forever
-    inet6 ::1/128 scope host 
+    inet6 ::1/128 scope host
        valid_lft forever preferred_lft forever
 2: enp1s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
     link/ether 00:00:00:00:00:00 brd ff:ff:ff:ff:ff:ff
     inet 192.168.160.101/24 brd 192.168.160.255 scope global enp1s0
        valid_lft forever preferred_lft forever
-    inet6 fe80::5054:ff:fefd:43c0/64 scope link 
+    inet6 fe80::5054:ff:fefd:43c0/64 scope link
        valid_lft forever preferred_lft forever
-3: docker0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default 
+3: docker0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default
     link/ether 02:42:ab:3d:e1:a2 brd ff:ff:ff:ff:ff:ff
     inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
        valid_lft forever preferred_lft forever
-    inet6 fe80::42:abff:fe3d:e1a2/64 scope link 
+    inet6 fe80::42:abff:fe3d:e1a2/64 scope link
        valid_lft forever preferred_lft forever
 ```
 
