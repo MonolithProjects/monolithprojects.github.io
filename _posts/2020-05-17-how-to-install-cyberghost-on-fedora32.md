@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "How to install cybergost on Fedora 32"
+title:  "How to install cyberghostvpn on Fedora 32"
 categories: [english]
 ---
 
