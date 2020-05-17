@@ -36,7 +36,6 @@ $header-bg-color-secondary: #102c3d !default;
   left: 0;
   bottom: 0;
   width: 100%;
-  @import "svg-icons";
   @include large {
     padding: 5rem 6rem;
   }
