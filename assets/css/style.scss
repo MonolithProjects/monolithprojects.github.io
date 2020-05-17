@@ -5,7 +5,6 @@ $header-bg-color: #174869 !default;
 $header-bg-color-secondary: #102c3d !default;
 
 @import "{{ site.theme }}";
-@import "svg-icons";
 
 .page-header {
   background-color: $header-bg-color;
@@ -37,7 +36,7 @@ $header-bg-color-secondary: #102c3d !default;
   left: 0;
   bottom: 0;
   width: 100%;
-
+  @import "svg-icons";
   @include large {
     padding: 5rem 6rem;
   }
