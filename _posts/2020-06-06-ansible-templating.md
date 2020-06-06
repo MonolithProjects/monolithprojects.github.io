@@ -21,23 +21,3 @@ Ak si niekto povie načo použivať modul `template` a učiť sa syntax Jinja2, 
 
 Ansible modul `template` je fajn v tom, že ti dovolí meniť hodnoty v konfiguračnom súbore pomocou premenných a rôznych dynamickych vyrazov. Dosadzovať hodnoty, vytvárať loopy a podmienky na základe ktorých sa rozhoduje či daná čast vo výstupnom súbore bude alebo nie.
 
-### Ako na to
-
-Zákládna ńformácia je asi tá, že templatovanie sa deje na Ansible kontrolery. Jinja2 teda nieje potrebná na cieľoovom serveri. Tam sa posiela už vygenerovaný súbor.
-
-Príklad ako pracovať s `template` modulom. Zdrojový Jinja2 súbor/template má príponu `j2`:
-
-```yaml
-- name: Template a file to /etc/service.conf
-  template:
-    src: templates/myservice.conf.j2
-    dest: /etc/myservice.conf
-```
-
-Jinja2 pozná 4 druhy oddeľovačov (najdôležitejšie sú prvé dva a im sa budem venovať):
-
-- `{{ ... }}` pre výrazy, ktorý bude vo výstupe vyrenderovaný
-- `{% ... %}` pre príkazy
-- `{# ... #}` pre komenty (nebudú vo výstupe)
-- `#  ... ##` pre celoriadkové príkazy
-
