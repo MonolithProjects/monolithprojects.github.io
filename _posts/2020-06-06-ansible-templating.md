@@ -21,3 +21,147 @@ Ak si niekto povie načo použivať modul `template` a učiť sa syntax Jinja2, 
 
 Ansible modul `template` je fajn v tom, že ti dovolí meniť hodnoty v konfiguračnom súbore pomocou premenných a rôznych dynamickych vyrazov. Dosadzovať hodnoty, vytvárať loopy a podmienky na základe ktorých sa rozhoduje či daná čast vo výstupnom súbore bude alebo nie.
 
+### Ako na to
+
+Zákládna ńformácia je asi tá, že templatovanie sa deje na Ansible kontrolery. Jinja2 teda nieje potrebná na cieľoovom serveri. Tam sa posiela už vygenerovaný súbor.
+
+Príklad ako pracovať s `template` modulom. Zdrojový Jinja2 súbor/template má príponu `j2`:
+
+```yaml
+- name: Template a file to /etc/service.conf
+  template:
+    src: templates/myservice.conf.j2
+    dest: /etc/myservice.conf
+```
+
+Jinja2 pozná 4 druhy oddeľovačov (najdôležitejšie sú prvé dva a im sa budem venovať):
+
+
+
+Najlepšie bude ak jednotlivé postupy popíšem na príklade. Použijem naň konfigurák pre keepalived. Najskor si predstav, že máme iba jedno-nodový cluster, čo je síce hlúposť ale na začiatok postačí :-).
+
+Uvodná statická konfigurácia pre keepalived master nodu:
+
+```
+vrrp_instance VI_1 {
+        interface eth1
+        state MASTER
+        virtual_router_id 51
+        priority 100
+        authentication {
+                auth_type PASS
+                auth_pass SomePassword
+        }
+        virtual_ipaddress {
+                192.168.1.70 dev eth0
+        }
+}
+```
+
+---
+
+### Výrazy
+
+Teraz chcem parametrizovať časť s virtuálnou IP a nahradiť statickú hodnotu `192.168.160.70` premennou tak, aby som vedel ip adresu doplniť z Ansible variable v playbooku, inventory alebo Ansible Facts. Na to použijem Jinja2 výraz s premonnou `virt_ip`. Template bude vyzerať takto:
+
+```
+vrrp_instance VI_1 {
+        interface eth0
+        state MASTER
+        priority 100
+        virtual_router_id 51
+        authentication {
+                auth_type PASS
+                auth_pass SomePassword
+        }
+        virtual_ipaddress {
+               {{ virt_ip }}
+        }
+}
+```
+
+Ako by vyzeral Ansible playbook s premennou:
+
+```yaml
+---
+- name: Configure keepalived servers
+  hosts: ha_cluster
+  become: yes
+  vars:
+      virt_ip: 192.168.1.70
+
+  tasks:
+      - name: Template for Keepalived
+        template:
+            src: templates/keepalived.conf.j2
+            dest: /etc/keepalived.conf.j2
+```
+
+Jinja2 obsahuje množstvo filtrov pomocou ktorých sa dáta vo výrazoch daju spracovať. Viac o filtroch nájdeš [tu](https://docs.ansible.com/ansible/latest/user_guide/playbooks_filters.html#filters).
+
+---
+
+### Príkazy
+
+V ďalšom kroku chcem pridať druhý server do clustra. Jeho konfigurácia ale musí byť trocha iná. `state` musí byť `BACKUP` a hodnota `priority` nižšia ako má `MASTER`. Pridám ho do Ansible inventory do grupy `ha_cluster`. Využijem fakt, že tento server je druhý v poradí v inverntory groupe `ha_cluster`. Použijem `if` podmienku v oddeľovači pre príkazy ktorá hovorí, že ak generujem súbor pre prvý server v `ha_cluster` grupe, riadky so `state` a `priority` budú iné ako pre ďalší server. 
+
+```
+vrrp_instance VI_1 {
+        interface eth0
+{% if groups['ha_cluster'][0] %}
+        state MASTER
+        priority 100
+{% else %}
+        state BACKUP
+        priority 99
+{% endif %}
+        virtual_router_id 51
+        authentication {
+                auth_type PASS
+                auth_pass SomePassword
+        }
+        virtual_ipaddress {
+               {{ virt_ip }}
+        }
+}
+```
+
+---
+
+Lenže čo ak chcem pridať ďalších n serverov a možno ani neviem ich konečný počet? Môžem použit `for` loop. Loop pobeží toľko krát, koľko je serverov v inventory grupe `ha_cluster`. `priority` je odstránená z `if` podmienky a jej hodnota je vypočítaná v `{{ 101 - loop.index }}`. To znamená, že MASTER server bude mať prioritu 100 a každy ďalší server o 1 menej.
+
+```
+vrrp_instance VI_1 {
+        interface eth0
+{% for host in groups['ha_cluster'] %}
+{% if groups['ha_cluster'][0] %}
+        state MASTER
+{% else %}
+        state BACKUP
+{% endif %}
+        priority {{ 101 - loop.index }}
+{% endfor %}
+        virtual_router_id 51
+        authentication {
+                auth_type PASS
+                auth_pass SomePassword
+        }
+        virtual_ipaddress {
+               {{ virt_ip }}
+        }
+}
+```
+
+Viac k prpíkazom v Jinja2 [tu](https://jinja.palletsprojects.com/en/2.11.x/templates/#list-of-control-structures).
+
+---
+
+Ďalšie referencie:
+
+[Kompletná dokumentácia k Jinja2](https://jinja.palletsprojects.com/en/2.11.x/templates/#int)
+
+[Dokumentácia k Ansible Templating](https://docs.ansible.com/ansible/latest/user_guide/playbooks_templating.html)
+
+[Ansible template modul](https://docs.ansible.com/ansible/latest/modules/template_module.html)
+
+---
