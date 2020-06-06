@@ -171,7 +171,7 @@ Viac k prpíkazom v Jinja2 [tu](https://jinja.palletsprojects.com/en/2.11.x/temp
 
 ---
 
-Ďalšie referencie:
+Referencie:
 
 [Kompletná dokumentácia k Jinja2](https://jinja.palletsprojects.com/en/2.11.x/templates/#int)
 
