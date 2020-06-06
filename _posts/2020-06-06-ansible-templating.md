@@ -4,7 +4,7 @@ title:  "Ansible Templating s použitím Jinja2"
 categories: [slovak]
 ---
 
-V tomto blogu popíšem možnosti generovania (nie len) konfiguračných súborov Linux/Unix servisov pomocou Ansible a Jinja2 templatovacieho jazyka. Článok počíta s tým, že čitatel má aspoň základné znalosti Ansible.
+V tomto blogu popíšem základné postupy pri generovaní (nie len) konfiguračných súborov pomocou Ansible a Jinja2 templatovacieho jazyka. Článok počíta s tým, že čitatel má aspoň základné znalosti Ansible.
 
 ### Akoy spôsobom konfigurovať servis
 
