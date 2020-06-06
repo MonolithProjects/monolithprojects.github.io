@@ -130,7 +130,7 @@ vrrp_instance VI_1 {
 
 ---
 
-Lenže čo ak chcem pridať ďalších n serverov a možno ani neviem ich konečný počet? Možem použit `for` loop. Loop pobeží toľko krát koľko je serverov v inventory grupe `ha_cluster`. `priority` je odstránená z `if` podmienky a jej hodnota je vypočítaná v `{{ 101 - loop.index }}`
+Lenže čo ak chcem pridať ďalších n serverov a možno ani neviem ich konečný počet? Môžem použit `for` loop. Loop pobeží toľko krát koľko je serverov v inventory grupe `ha_cluster`. `priority` je odstránená z `if` podmienky a jej hodnota je vypočítaná v `{{ 101 - loop.index }}`
 
 ```
 vrrp_instance VI_1 {
