@@ -41,7 +41,7 @@ Jinja2 pozná 4 druhy oddeľovačov (najdôležitejšie sú prvé dva a im sa bu
 {{ ... }} pre výrazy, ktorý bude vo výstupe vyrenderovaný
 {% ... %} pre príkazy
 {# ... #} pre komenty - nebudú vo výstupe
-#  ...    pre celoriadkové príkazy
+#  ... ## pre celoriadkové príkazy
 {% endraw %}
 ```
 
