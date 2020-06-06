@@ -45,9 +45,9 @@ Jinja2 pozná 4 druhy oddeľovačov od textu, ktorý je statický a bude vo výs
 {% endraw %}
 ```
 
-Jednotlivé postupy popíšem na príklade. Použijem naň konfigurák pre keepalived. Najskor si predstav, že máme iba cluster s jednym serverom (oxymoron?).
+Jednotlivé postupy popíšem na príklade. Použijem naň konfigurák pre keepalived. Najskor si predstav, že máme iba cluster s jednym serverom (oxymoron?) v Ansible inventory groupe `ha_cluster`.
 
-Uvodná statická konfigurácia pre keepalived master server:
+Statická konfigurácia pre keepalived master server:
 
 ```jinja
 {% raw %}
