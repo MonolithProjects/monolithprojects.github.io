@@ -41,11 +41,11 @@ Jinja2 pozná 4 druhy oddeľovačov (najdôležitejšie sú prvé dva a im sa bu
 {{ ... }} pre výrazy, ktorý bude vo výstupe vyrenderovaný
 {% ... %} pre príkazy
 {# ... #} pre komenty - nebudú vo výstupe
-#  ... ## pre celoriadkové príkazy
+#  ...    pre celoriadkové príkazy
 {% endraw %}
 ```
 
-Najlepšie bude ak jednotlivé postupy popíšem na príklade. Použijem naň konfigurák pre keepalived. Najskor si predstav, že máme iba jedno-nodový cluster, čo je síce hlúposť ale na začiatok postačí :-).
+Najlepšie bude ak jednotlivé postupy popíšem na príklade. Použijem naň konfigurák pre keepalived. Najskor si predstav, že máme iba jedno-nodový cluster, čo je síce hlúposť ale na začiatok postačí .
 
 Uvodná statická konfigurácia pre keepalived master server:
 
