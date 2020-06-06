@@ -38,10 +38,10 @@ Jinja2 pozná 4 druhy oddeľovačov (najdôležitejšie sú prvé dva a im sa bu
 
 ```jinja
 {% raw %}
-{{ xxx }} pre výrazy, ktorý bude vo výstupe vyrenderovaný
-{% xxx %} pre príkazy
-{# xxx #} pre komenty - nebudú vo výstupe
-#  xxx    pre celoriadkové príkazy
+{{ ... }} pre výrazy, ktorý bude vo výstupe vyrenderovaný
+{% ... %} pre príkazy
+{# ... #} pre komenty - nebudú vo výstupe
+#  ... ## pre celoriadkové príkazy
 {% endraw %}
 ```
 
