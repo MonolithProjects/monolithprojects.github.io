@@ -17,7 +17,7 @@ Pri automatizovanej konfiguracii servisov pomocou Ansible som sa stretol so 4 sp
 
 ### Prečo použivať template
 
-Načo použivať Ansible modul `template` a učiť sa syntax Jinja2, ak môžem použiť už hotový konfigurák? Fungovalo by to iba za predpokladu že je konfiguračný súbor statický a nič sa v ňom meniť nebude. V prípade, že sú v súbore jedna/dve dynamické premenné, dá sa ešte využiť Ansible modul `lineinfile` a miesto v konfiguračnom súbore zmeniť priamo na serveri. No niekedy može byť `lineinfile` trocha tricky. Najmä ak by si mal vytvárať krkolomné `regexp` výrazy. Lenže čo v prípade, ak sa dynamicky menia celé časti konfiguračného súboru?
+Načo použivať Ansible modul `template` a učiť sa syntax Jinja2, ak môžem použiť už hotový konfigurák? Fungovalo by to iba za predpokladu že je konfiguračný súbor statický a nič sa v ňom meniť nebude. V prípade, že sú v súbore jedna/dve dynamické premenné, dá sa ešte využiť Ansible modul `lineinfile` a miesto v konfiguračnom súbore zmeniť priamo na serveri. No niekedy može byť `lineinfile` trocha tricky. Najmä ak by si mal vytvárať krkolomné `regexp` výrazy. Lenže čo v prípade, ak sa dynamicky menia celé časti konfiguračného súboru a ešte k tomu na základe rôznych podmienok?
 
 Ansible modul `template` je fajn v tom, že ti dovolí meniť hodnoty v konfiguračnom súbore pomocou dynamickych vyrazov a celé bloky pomocou príkazov. Dosadzovať hodnoty, upravovať ich, vytvárať loopy a podmienky na základe ktorých sa rozhoduje či daná čast vo výstupnom súbore bude alebo nie.
 
