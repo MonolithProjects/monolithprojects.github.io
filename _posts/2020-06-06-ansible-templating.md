@@ -6,7 +6,7 @@ categories: [slovak]
 
 V tomto blogu popíšem základné postupy pri generovaní (nie len) konfiguračných súborov pomocou Ansible a Jinja2 templatovacieho jazyka. Článok počíta s tým, že máš aspoň základné znalosti Ansible.
 
-### Akoy spôsobom konfigurovať servis
+### Ako konfigurovať servis
 
 Pri automatizovanej konfiguracii servisov pomocou Ansible som sa stretol so 4 spôsobmi ako deploynuť servis na server ( ajkeď priznávam, že by sa našli aj nejaké iné/šialené spôsoby :-) ).  
 
