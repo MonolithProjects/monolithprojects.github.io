@@ -45,7 +45,7 @@ Jinja2 pozná 4 druhy oddeľovačov od textu, ktorý je statický a bude vo výs
 {% endraw %}
 ```
 
-Jednotlivé postupy popíšem na príklade. Použijem naň konfigurák pre keepalived. Najskor si predstav, že máme iba jedno-nodový cluster, čo je síce hlúposť ale na začiatok postačí :-).
+Jednotlivé postupy popíšem na príklade. Použijem naň konfigurák pre keepalived. Najskor si predstav, že máme iba cluster s jednym serverom (oxymoron?).
 
 Uvodná statická konfigurácia pre keepalived master server:
 
