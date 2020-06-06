@@ -23,7 +23,7 @@ Ansible modul `template` je fajn v tom, že ti dovolí meniť hodnoty v konfigur
 
 ### Ako na to
 
-Zákládna ńformácia je asi tá, že templatovanie sa deje na Ansible kontrolery. Jinja2 teda nieje potrebná na cieľoovom serveri. Tam sa posiela už vygenerovaný súbor.
+Zákládna iformácia je asi tá, že templatovanie sa deje na Ansible kontrolery. Jinja2 teda nieje potrebná na cieľovom serveri. Tam sa posiela už vygenerovaný súbor.
 
 Príklad ako pracovať s `template` modulom (viac info [tu](https://docs.ansible.com/ansible/latest/modules/template_module.html)). Zdrojový Jinja2 súbor/template má príponu `j2`:
 
@@ -34,7 +34,7 @@ Príklad ako pracovať s `template` modulom (viac info [tu](https://docs.ansible
     dest: /etc/myservice.conf
 ```
 
-Jinja2 pozná 4 druhy oddeľovačov (najdôležitejšie sú prvé dva a im sa budem venovať):
+Jinja2 pozná 4 druhy oddeľovačov od textu, ktorý je statický a bude vo výslednom súbore (najdôležitejšie sú prvé dva a im sa budem venovať):
 
 ```jinja
 {% raw %}
