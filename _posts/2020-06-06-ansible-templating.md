@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Ansible Templating s použitím Jinja2"
+title:  "Templating s použitím Ansible a Jinja2"
 categories: [slovak]
 ---
 
