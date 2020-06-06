@@ -25,7 +25,7 @@ Ansible modul `template` je fajn v tom, že ti dovolí meniť hodnoty v konfigur
 
 Zákládna ńformácia je asi tá, že templatovanie sa deje na Ansible kontrolery. Jinja2 teda nieje potrebná na cieľoovom serveri. Tam sa posiela už vygenerovaný súbor.
 
-Príklad ako pracovať s `template` modulom. Zdrojový Jinja2 súbor/template má príponu `j2`:
+Príklad ako pracovať s `template` modulom (viac info [tu](https://docs.ansible.com/ansible/latest/modules/template_module.html)). Zdrojový Jinja2 súbor/template má príponu `j2`:
 
 ```yaml
 - name: Template a file to /etc/service.conf
@@ -45,7 +45,7 @@ Jinja2 pozná 4 druhy oddeľovačov (najdôležitejšie sú prvé dva a im sa bu
 
 Najlepšie bude ak jednotlivé postupy popíšem na príklade. Použijem naň konfigurák pre keepalived. Najskor si predstav, že máme iba jedno-nodový cluster, čo je síce hlúposť ale na začiatok postačí :-).
 
-Uvodná statická konfigurácia pre keepalived master nodu:
+Uvodná statická konfigurácia pre keepalived master server:
 
 ```jinja
 vrrp_instance VI_1 {
@@ -166,7 +166,5 @@ Viac k prpíkazom v Jinja2 [tu](https://jinja.palletsprojects.com/en/2.11.x/temp
 [Kompletná dokumentácia k Jinja2](https://jinja.palletsprojects.com/en/2.11.x/templates/#int)
 
 [Dokumentácia k Ansible Templating](https://docs.ansible.com/ansible/latest/user_guide/playbooks_templating.html)
-
-[Ansible template modul](https://docs.ansible.com/ansible/latest/modules/template_module.html)
 
 ---
