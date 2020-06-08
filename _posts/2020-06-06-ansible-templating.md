@@ -52,16 +52,16 @@ Statická konfigurácia pre keepalived master server:
 ```jinja
 {% raw %}
 vrrp_instance VI_1 {
-        interface eth1
+        interface eth0
         state MASTER
-        virtual_router_id 51
         priority 100
+        virtual_router_id 51
         authentication {
                 auth_type PASS
                 auth_pass SomePassword
         }
         virtual_ipaddress {
-                192.168.1.70 dev eth0
+                192.168.1.70
         }
 }
 {% endraw %}
@@ -105,7 +105,7 @@ Ako by vyzeral Ansible playbook s premennou:
       - name: Template for Keepalived
         template:
             src: templates/keepalived.conf.j2
-            dest: /etc/keepalived.conf.j2
+            dest: /etc/keepalived.conf
 ```
 
 Jinja2 obsahuje množstvo filtrov pomocou ktorých sa dáta vo výrazoch daju spracovať. Viac o filtroch nájdeš [tu](https://docs.ansible.com/ansible/latest/user_guide/playbooks_filters.html#filters).
