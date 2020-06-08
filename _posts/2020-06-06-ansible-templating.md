@@ -173,7 +173,7 @@ Viac k prpíkazom v Jinja2 [tu](https://jinja.palletsprojects.com/en/2.11.x/temp
 
 Referencie:
 
-[Kompletná dokumentácia k Jinja2](https://jinja.palletsprojects.com/en/2.11.x/templates/#int)
+[Kompletná dokumentácia k Jinja2](https://jinja.palletsprojects.com/en/2.11.x/templates)
 
 [Dokumentácia k Ansible Templating](https://docs.ansible.com/ansible/latest/user_guide/playbooks_templating.html)
 
