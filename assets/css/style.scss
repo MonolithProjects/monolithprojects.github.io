@@ -37,15 +37,15 @@ $header-bg-color-secondary: #102c3d !default;
   bottom: 0;
   width: 100%;
   @include large {
-    padding: 5rem 6rem;
+    padding: 1rem 1rem;
   }
 
   @include medium {
-    padding: 3rem 4rem;
+    padding: 1rem 1rem;
   }
 
   @include small {
-    padding: 2rem 1rem;
+    padding: 1rem 1rem;
   }
 }
 
