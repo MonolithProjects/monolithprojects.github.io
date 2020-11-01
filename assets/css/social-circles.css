@@ -181,9 +181,9 @@ a.social-button.color.static:hover:before, .static a.social-button.color:hover:b
 a.social-button.grey {
     font-size: 32px;
     display: inline;
-    background-color: #6e7072;
+    background-color: #474747;
     border-radius: 50%;
-    padding: 20px;
+    padding: 5px;
 }
 
 a.social-button.grey:hover {
