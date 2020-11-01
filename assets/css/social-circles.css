@@ -179,7 +179,11 @@ a.social-button.color.static:hover:before, .static a.social-button.color:hover:b
 }
 
 a.social-button.grey {
-    padding: 10px;
+    /* font-size: 32px;
+    display: inline-block;
+    background-color: #000;
+    border-radius: 50%; */
+    padding: 20px;
 }
 
 a.social-button.grey:hover {
