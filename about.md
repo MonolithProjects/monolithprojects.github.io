@@ -39,5 +39,5 @@ I like science. Especially science somehow connected to the Universe - Jiri Gryg
 
 Of course i like sport. I like playing Ice Hockey, football, cycling and running. But i do not watch sport - only NHL  matches from the 90s.
 
-And last but not least - i love spending my time with girlfriend, my family and friends.
+And last but not least - i love spending my time with my girlfriend, my family and friends.
 
