@@ -1,6 +1,6 @@
 # About
 
-Hey! Maybe you are wondering what the title page actually is. Well it my dashboard of projects which i am maintaining. It is a quick view on their status - like number of issues, tests and so on...  
+Hey! Maybe you are wondering what the title page actually is. Well it si my dashboard of projects which i am maintaining. It is a quick view on their status - like number of issues, tests and so on...  
 
 ![space-monkey](https://github.com/MonolithProjects/monolithprojects.github.io/raw/artifacts/space-monkey.png?style=centerme)
 
