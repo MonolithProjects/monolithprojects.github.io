@@ -10,7 +10,7 @@ But who am i? I am a guy working as an DevOps engineer (I know, i know... wise p
 
 I like automation and cloud.  
 
-**By day** i mostly help the people to create IaC, setup their CI/CD pipelines all in Private OpenStack Telco cloud. 
+**By day** i mostly help the people to create IaC, setup their CI/CD pipelines and that all is happening in private OpenStack Telco cloud. 
 
 **By night** i contrubute to public or my personal opensource projects on GitHub, mostly related to Ansible. I am constantly reworking and improving my home automation stack. 
 
