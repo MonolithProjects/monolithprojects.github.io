@@ -33,7 +33,7 @@ But who am i? I am a guy working as a DevOps engineer (I know, i know... wise pe
 
 ## Who am i - Part II 
 
-My origins are in the Mountains of Slovakia called High Tatras. Maybe that's the reason why i like being in the nature so much. I don't like this sporty kind of hiking where you are rushing to a mountain peak to be able to say you were there (did i mention i summited several 3K+ peaks in the Alpines and hiked solo across the Iceland?:) ). I love camping and bushcrafting. Find a nice spot in the forrest, make a shalter, start a fire and cook some simple but good meal. Track the wild life and admire the nature.
+My origins are in the Mountains of Slovakia called High Tatras. Maybe that's the reason why i like being in the nature so much. I don't like this sporty kind of hiking where you are rushing to a mountain peak to be able to say you were there (have i mention i summited several 3K+ peaks in the Alpines and hiked solo across the Iceland?:) ). I love camping and bushcrafting. Find a nice spot in the forrest, make a shalter, start a fire and cook some simple but good meal. Track the wild life and admire the nature.
 
 I like science. Especially science somehow connected to the Astronomy and Universe - Jiri Grygar is my hero :) I also appreciate institutions like the UN and EU. I like to read but i do not read as much as i wish to (audio books are saving me). 
 
