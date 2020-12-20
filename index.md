@@ -61,6 +61,6 @@ List of GitHub Actions in the [Marketplace](https://github.com/marketplace)
 
 List of Terraform Modules
 
-|Terraform Module|Terraform Lint|Latest release|Issues|Pull requests|
+|Terraform Module|Latest release|Terraform Lint|Issues|Pull requests|
 |:---------|:-----------|------|-------------|---|
-|[Libvirt Virtual Machine](https://github.com/MonolithProjects/terraform-libvirt-vm)|[![GitHub Actions](https://github.com/MonolithProjects/terraform-libvirt-vm/workflows/Lint/badge.svg)](https://github.com/MonolithProjects/terraform-libvirt-vm/actions)|[![Last version](https://img.shields.io/github/v/release/monolithprojects/terraform-libvirt-vm)](https://github.com/MonolithProjects/terraform-libvirt-vm)|[![issues](https://img.shields.io/github/issues-raw/monolithprojects/terraform-libvirt-vm)](https://github.com/monolithprojects/terraform-libvirt-vm/issues)|[![pull requests](https://img.shields.io/github/issues-pr/monolithprojects/terraform-libvirt-vm)](https://github.com/monolithprojects/terraform-libvirt-vm/pulls)
+|[Libvirt Virtual Machine](https://github.com/MonolithProjects/terraform-libvirt-vm)|[![Last version](https://img.shields.io/github/v/release/monolithprojects/terraform-libvirt-vm)](https://github.com/MonolithProjects/terraform-libvirt-vm)|[![GitHub Actions](https://github.com/MonolithProjects/terraform-libvirt-vm/workflows/Lint/badge.svg)](https://github.com/MonolithProjects/terraform-libvirt-vm/actions)|[![issues](https://img.shields.io/github/issues-raw/monolithprojects/terraform-libvirt-vm)](https://github.com/monolithprojects/terraform-libvirt-vm/issues)|[![pull requests](https://img.shields.io/github/issues-pr/monolithprojects/terraform-libvirt-vm)](https://github.com/monolithprojects/terraform-libvirt-vm/pulls)
