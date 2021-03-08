@@ -14,23 +14,6 @@ But who am i? I am a guy working as a DevOps engineer (I know, i know... wise pe
 
 **By night** i contrubute to public or my personal opensource projects on GitHub (mostly related to Ansible). I am constantly reworking and improving my home automation stack. 
 
-### My A vs. B
-
-- Ansible vs Chef 
-  - **Ansible**
-- Kubernetes vs Nomad 
-  - **Nomad**
-- JSON vs YAML 
-  - **YAML**
-- Python vs Go 
-  - **Python**
-- fish vs zsh 
-  - **fish**
-- HEAT vs Terraform 
-  - **Terraform**
-- InfluxDB vs Prometheus
-  - **InfluxDB**
-
 ## Who am i - Part II 
 
 My origins are in the Mountains of Slovakia called High Tatras. Maybe that's the reason why i like being in the nature so much. I don't like this sporty kind of hiking where you are rushing to a mountain peak to be able to say you were there (have i mention i summited several 3K+ peaks in the Alpines and hiked solo across the Iceland?:) ). I love camping and bushcrafting. Find a nice spot in the forrest, make a shalter, start a fire and cook some simple but good meal. Track the wild life and admire the nature.
