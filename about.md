@@ -10,7 +10,7 @@ But who am i? I am a guy working as a DevOps engineer (I know, i know... wise pe
 
 ### What i do
 
-**By day** i mostly help the people to create IaC, setup their CI/CD pipelines and that all is happening in private OpenStack Telco cloud. Plus some operations, designing, coding, scripting. 
+**By day** i mostly help the people to create IaC, setup their CI/CD pipelines and that all is happening in a private OpenStack Telco cloud. Plus some operations, designing, coding, scripting. 
 
 **By night** i contrubute to public or my personal opensource projects on GitHub (mostly related to Ansible). I am constantly reworking and improving my home automation stack. 
 
@@ -23,4 +23,3 @@ I like science. Especially science somehow connected to the Astronomy and Univer
 Of course i like sport. I like playing ice hockey, football, cycling and running. But i do not watch sport in the TV - only NHL matches from the 90s on the youtube:).
 
 And last but not least - i love spending my time with my girlfriend, my family and friends.
-
