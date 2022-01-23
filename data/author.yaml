@@ -2,7 +2,7 @@
 name: "Michal Muransky"
 nickname: "Mike"
 
-greeting: "Hi, I am"
+greeting: "Hi there, I am"
 image: "images/author/mike.png"
 
 contactInfo:
@@ -10,6 +10,7 @@ contactInfo:
   # phone: "+421"
 
 summary:
-  - terraform destroy --auto-approve
-  - sudo rm -rf /
-  - exit
+  - A Cloud Engineer
+  - DevOps poisitive
+  - Fascinated by Space science
+  - Camper and Bushcraft enthusiast
