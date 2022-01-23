@@ -1,0 +1,15 @@
+
+name: "Michal Muransky"
+nickname: "Mike"
+
+greeting: "Hi, I am"
+image: "images/author/mike.png"
+
+contactInfo:
+  email: "mike.muransky@gmail.com"
+  # phone: "+421"
+
+summary:
+  - terraform destroy --auto-approve
+  - sudo rm -rf /
+  - exit

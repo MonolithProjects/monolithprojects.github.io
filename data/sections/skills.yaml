@@ -1,0 +1,50 @@
+section:
+  name: Some of my skills
+  id: skills
+  enable: true
+  weight: 2
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+skills:
+- name: Kubernetes
+  logo: "/images/sections/skills/kubernetes.png"
+  summary: "Capable of building and troubleshooting Kubernetes clusters. Deploying and managing applications with helm or kustomize."
+  url: "https://kubernetes.io/"
+
+- name: Ansible
+  logo: "/images/sections/skills/ansible.png"
+  summary: "Automating linux servers configuration and software management."
+  url: "https://ansible.com/"
+
+- name: Terraform
+  logo: "/images/sections/skills/terraform.png"
+  summary: "Building Infrastracture as a code. Creating reusable Terraform modules."
+  url: "https://www.terraform.io/"
+
+- name: Git
+  logo: /images/sections/skills/git.png
+  summary: "Experienced with git-based development. Mostly i use GitHub but also i have experience in working with GitLab."
+  url: "https://git-scm.com/"
+
+- name: CI/CD
+  logo: /images/sections/skills/cicd.png
+  summary: "Creating complex multistage pipelines for continuous integration, continuous delivery, and continuous deployment. Most of my experience are in GitHub Actions, GitLab CI/CD and ArgoCD. Passionate about GitOps and git flow."
+
+- name: Cloud Computing
+  logo: "/images/sections/skills/cloud.png"
+  summary: "Worked with most of the major public clouds with main focus on AWS. For several years i parcipated on building a private cloud based on OpenStack."
+
+- name: Prometheus and Thanos
+  logo: /images/sections/skills/prometheus.png
+  summary: "Capable of setup, configure Prometheus and Thanos. Experienced with PromQL, AlertManager."
+  url: "https://prometheus.io/"
+
+- name: Linux servers
+  logo: "/images/sections/skills/linux.png"
+  summary: "I have 10+ years experience of managing Linux servers (RHEL, CentOS, Ubuntu) mainly in telco industry."
+
+- name: Python
+  logo: "/images/sections/skills/python.png"
+  summary: "Along with bash scripting i can code in Python language."

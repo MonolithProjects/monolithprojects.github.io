@@ -1,0 +1,48 @@
+section:
+  name: Experiences
+  id: experiences
+  enable: true
+  weight: 3
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true 
+
+# Your experiences
+experiences:
+- company:
+    name: Labyrinth Labs.
+    url: "https://lablabs.io"
+    location: Bratislava, Slovakia
+    # company overview
+    overview: Labyrinth Labs is a boutique expert shop that specializes in DevOps and cloud computing.
+  positions:
+  - designation: Cloud / DevOps Engineer
+    start: Mar 2021
+    responsibilities:
+    - As a member of a small team of experts i am helping companies to build, automate and operate their cloud infrastructure.
+
+- company:
+    name: Deutsche Telekom Pan-Net.
+    url: "https://www.telekom.com/en/media/details/the-pan-european-network-pan-net--442220"
+    location: Bratislava, Slovakia
+    overview: The joint pan-European network of Deutsche Telekom with main focus on moving production logic from legacy hardware platforms into the virtual environment.
+  positions:
+  - designation: DevOps Engineer / SRE
+    start: March 2017
+    end: Feb 2021
+    responsibilities:
+    - Keeping Pan-Net internal tools reliable using the automation and SRE principles
+    - Helping customers to onboard their applications to the Pan-Net OpenStack cloud
+    - Participating on development of Application Lifecycle Engine
+
+- company:
+    name: AT&T
+    url: "https://www.att.com/"
+    location: Bratislava, Slovakia
+    overview: World's largest telecommunications company and the largest provider of mobile telephone services in the U.S.
+  positions:
+  - designation: Linux System Administrator
+    start: March 2017
+    end: Aug 2012
+    responsibilities:
+    - Managing 30.000+ physical and virtual Linux servers
