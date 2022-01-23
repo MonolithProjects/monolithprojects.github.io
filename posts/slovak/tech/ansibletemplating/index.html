@@ -1,0 +1,102 @@
+<!doctype html><html><head><title>Ansible templating</title><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=x-ua-compatible content="ie=edge"><link rel=stylesheet href=/css/bootstrap.min.css><link rel=stylesheet href=/css/layouts/main.css><link rel=stylesheet href=/css/navigators/navbar.css><link rel=stylesheet href=/css/plyr.css><link rel=stylesheet href=/css/flag-icon.min.css><link rel=stylesheet href=/css/katex.min.css><link rel=stylesheet href="https://fonts.googleapis.com/css2?family=Muli:wght@300;400;500;600"><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css><meta property="og:title" content="Ansible templating"><meta property="og:description" content="Ansible templating"><meta property="og:type" content="article"><meta property="og:url" content="https://monolithprojects.github.io/posts/slovak/tech/ansibletemplating/"><meta property="article:published_time" content="2022-01-23T01:50:25+02:00"><meta property="article:modified_time" content="2022-01-23T01:50:25+02:00"><meta name=description content="Ansible templating"><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/atom-one-dark.min.css><link rel=stylesheet href=/css/layouts/single.css><link rel=stylesheet href=/css/navigators/sidebar.css><link rel=stylesheet href=/css/style.css></head><body data-spy=scroll data-target=#TableOfContents data-offset=80><div class="container-fluid bg-dimmed wrapper"><nav class="navbar navbar-expand-xl top-navbar final-navbar shadow"><div class=container><button class="navbar-toggler navbar-light" id=sidebar-toggler type=button onclick=toggleSidebar()>
+<span class=navbar-toggler-icon></span></button>
+<a class=navbar-brand href=/>Satellite</a>
+<button class="navbar-toggler navbar-light" id=toc-toggler type=button onclick=toggleTOC()>
+<span class=navbar-toggler-icon></span></button><div class="collapse navbar-collapse lang-selector" id=top-nav-items><ul class="navbar-nav ml-auto"></ul></div></div></nav><section class=sidebar-section id=sidebar-section><div class=sidebar-holder><div class=sidebar id=sidebar><form class=mx-auto method=get action=/search><input type=text name=keyword placeholder=Search data-search id=search-box></form><div class=sidebar-tree><ul class=tree id=tree><li id=list-heading><a href=/posts data-filter=all>Posts</a></li><div class=subtree><li><a href=/posts/opensource/ title="Open-Source Dashboard">Open-Source Dashboard</a></li><li><i class="fas fa-plus-circle"></i><a href=/posts/english/>English posts</a><ul><li><a href=/posts/english/personal/ title="Personal posts (eng)">Personal posts (eng)</a></li><li><a href=/posts/english/tech/ title="Tech posts (eng)">Tech posts (eng)</a></li></ul></li><li><i class="fas fa-minus-circle"></i><a class=active href=/posts/>Slovak posts</a><ul class=active><li><i class="fas fa-plus-circle"></i><a href=/posts/slovak/personal/>Personal posts (sk)</a><ul><li><a href=/posts/slovak/personal/iceland/ title="Naprieč Islandom">Naprieč Islandom</a></li></ul></li><li><i class="fas fa-minus-circle"></i><a class=active href=/posts/slovak/tech/>Tech posts (sk)</a><ul class=active><li><a class=active href=/posts/slovak/tech/ansibletemplating/ title="Ansible templating">Ansible templating</a></li><li><a href=/posts/slovak/tech/docker1/ title="Docker part 1">Docker part 1</a></li></ul></li></ul></li></div></ul></div></div></div></section><section class=content-section id=content-section><div class=content><div class="container p-0 read-area"><div class="hero-area col-sm-12" id=hero-area style=background-image:url(https://monolithprojects.github.io/posts/slovak/tech/ansibletemplating/title.png)></div><div class=page-content><div class="author-profile ml-auto align-self-lg-center"><img class=rounded-circle src=/images/author/mike_hud321ed058f03c8018488331212da943d_254429_120x120_fit_box_2.png alt="Author Image"><h5 class=author-name></h5><p>:date_full</p></div><div class=title><h1>Ansible templating</h1></div><div class=taxonomy-terms><ul><li class=rounded><a href=/tags/tech class="btn, btn-sm">tech</a></li><li class=rounded><a href=/tags/slovak class="btn, btn-sm">slovak</a></li></ul></div><div class=post-content id=post-content><p>V tomto blogu popíšem základné postupy pri generovaní (nie len) konfiguračných súborov pomocou Ansible a Jinja2 templatovacieho jazyka. Článok počíta s tým, že máš aspoň základné znalosti Ansible.</p><h3 id=ako-konfigurovať-servis>Ako konfigurovať servis</h3><p>Pri automatizovanej konfiguracii servisov pomocou Ansible som sa stretol so 4 spôsobmi ako deploynuť servis na server ( ajkeď priznávam, že by sa našli aj nejaké iné/šialené spôsoby :-) ).</p><ol><li>Jednoducho nainštalovať servis s defaultnou konfiguraciou a teda s konfiguračným súborom servisu nerobiť nič.</li><li>Nakopírovať na server už hotový konfigurák pre daný servis, použitím modulu <code>copy</code>.</li><li>Editovať konfigurák na vzdialenom serveri napríklad pomocou modulu <code>lineinfile</code>.</li><li>A nakoniec s použi modulu <code>template</code>.</li></ol><h3 id=prečo-použivať-template>Prečo použivať template</h3><p>Načo použivať Ansible modul <code>template</code> a učiť sa syntax Jinja2, ak môžem použiť už hotový konfigurák? Fungovalo by to iba za predpokladu že je konfiguračný súbor statický a nič sa v ňom meniť nebude. V prípade, že sú v súbore jedna/dve dynamické premenné, dá sa ešte využiť Ansible modul <code>lineinfile</code> a miesto v konfiguračnom súbore zmeniť priamo na serveri. No niekedy može byť <code>lineinfile</code> trocha tricky. Najmä ak by si mal vytvárať krkolomné <code>regexp</code> výrazy. Lenže čo v prípade, ak sa dynamicky menia celé časti konfiguračného súboru a ešte k tomu na základe rôznych podmienok?</p><p>Ansible modul <code>template</code> je fajn v tom, že ti dovolí meniť hodnoty v konfiguračnom súbore pomocou dynamickych vyrazov a celé bloky pomocou príkazov. Dosadzovať hodnoty, upravovať ich, vytvárať loopy a podmienky na základe ktorých sa rozhoduje či daná čast vo výstupnom súbore bude alebo nie.</p><h3 id=ako-na-to>Ako na to</h3><p>Zákládna iformácia je asi tá, že templatovanie sa deje na Ansible kontrolery. Jinja2 teda nieje potrebná na cieľovom serveri. Tam sa posiela už vygenerovaný súbor.</p><p>Príklad ako pracovať s <code>template</code> modulom (viac info <a href=https://docs.ansible.com/ansible/latest/modules/template_module.html>tu</a>). Zdrojový Jinja2 súbor/template má príponu <code>j2</code>:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml>- <span style=color:#f92672>name</span>: <span style=color:#ae81ff>Template a file to /etc/service.conf</span>
+  <span style=color:#f92672>template</span>:
+    <span style=color:#f92672>src</span>: <span style=color:#ae81ff>templates/myservice.conf.j2</span>
+    <span style=color:#f92672>dest</span>: <span style=color:#ae81ff>/etc/myservice.conf</span>
+</code></pre></div><p>Jinja2 pozná 4 druhy oddeľovačov od textu, ktorý je statický a bude vo výslednom súbore (najdôležitejšie sú prvé dva a im sa budem venovať):</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-jinja data-lang=jinja><span style=color:#75715e>{%</span> <span style=color:#66d9ef>raw</span> <span style=color:#75715e>%}</span>
+{{ ... }} pre výrazy, ktorý bude vo výstupe vyrenderovaný
+{% ... %} pre príkazy
+{# ... #} pre komenty - nebudú vo výstupe
+#  ...    pre celoriadkové príkazy
+<span style=color:#75715e>{%</span> <span style=color:#66d9ef>endraw</span> <span style=color:#75715e>%}</span>
+</code></pre></div><p>Jednotlivé postupy popíšem na príklade. Použijem naň konfigurák pre keepalived. Najskor si predstav, že máme iba cluster s jednym serverom (oxymoron?) v Ansible inventory groupe <code>ha_cluster</code>.</p><p>Statická konfigurácia pre keepalived master server:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-jinja data-lang=jinja><span style=color:#75715e>{%</span> <span style=color:#66d9ef>raw</span> <span style=color:#75715e>%}</span>
+vrrp_instance VI_1 {
+        interface eth0
+        state MASTER
+        priority 100
+        virtual_router_id 51
+        authentication {
+                auth_type PASS
+                auth_pass SomePassword
+        }
+        virtual_ipaddress {
+                192.168.1.70
+        }
+}
+<span style=color:#75715e>{%</span> <span style=color:#66d9ef>endraw</span> <span style=color:#75715e>%}</span>
+</code></pre></div><hr><h3 id=výrazy>Výrazy</h3><p>Teraz chcem parametrizovať časť s virtuálnou IP a nahradiť statickú hodnotu <code>192.168.160.70</code> premennou tak, aby som vedel ip adresu doplniť z Ansible variable v playbooku, inventory alebo Ansible Facts. Na to použijem Jinja2 výraz s premonnou <code>virt_ip</code>. Template bude vyzerať takto:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-jinja data-lang=jinja><span style=color:#75715e>{%</span> <span style=color:#66d9ef>raw</span> <span style=color:#75715e>%}</span>
+vrrp_instance VI_1 {
+        interface eth0
+        state MASTER
+        priority 100
+        virtual_router_id 51
+        authentication {
+                auth_type PASS
+                auth_pass SomePassword
+        }
+        virtual_ipaddress {
+               {{ virt_ip }}
+        }
+}
+<span style=color:#75715e>{%</span> <span style=color:#66d9ef>endraw</span> <span style=color:#75715e>%}</span>
+</code></pre></div><p>Ako by vyzeral Ansible playbook s premennou:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml>---
+- <span style=color:#f92672>name</span>: <span style=color:#ae81ff>Configure keepalived servers</span>
+  <span style=color:#f92672>hosts</span>: <span style=color:#ae81ff>ha_cluster</span>
+  <span style=color:#f92672>become</span>: <span style=color:#66d9ef>yes</span>
+  <span style=color:#f92672>vars</span>:
+      <span style=color:#f92672>virt_ip</span>: <span style=color:#ae81ff>192.168.1.70</span>
+
+  <span style=color:#f92672>tasks</span>:
+      - <span style=color:#f92672>name</span>: <span style=color:#ae81ff>Template for Keepalived</span>
+        <span style=color:#f92672>template</span>:
+            <span style=color:#f92672>src</span>: <span style=color:#ae81ff>templates/keepalived.conf.j2</span>
+            <span style=color:#f92672>dest</span>: <span style=color:#ae81ff>/etc/keepalived.conf</span>
+</code></pre></div><p>Jinja2 obsahuje množstvo filtrov pomocou ktorých sa dáta vo výrazoch daju spracovať. Viac o filtroch nájdeš <a href=https://docs.ansible.com/ansible/latest/user_guide/playbooks_filters.html#filters>tu</a>.</p><hr><h3 id=príkazy>Príkazy</h3><p>V ďalšom kroku chcem pridať druhý server do clustra. Jeho konfigurácia ale musí byť trocha iná. <code>state</code> musí byť <code>BACKUP</code> a hodnota <code>priority</code> nižšia ako má <code>MASTER</code>. Pridám ho do Ansible inventory do grupy <code>ha_cluster</code>. Využijem fakt, že tento server je druhý v poradí v inverntory groupe <code>ha_cluster</code>. Použijem <code>if</code> podmienku v oddeľovači pre príkazy ktorá hovorí, že ak generujem súbor pre prvý server v <code>ha_cluster</code> grupe, riadky so <code>state</code> a <code>priority</code> budú iné ako pre ďalší server.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-jinja data-lang=jinja><span style=color:#75715e>{%</span> <span style=color:#66d9ef>raw</span> <span style=color:#75715e>%}</span>
+vrrp_instance VI_1 {
+        interface eth0
+{% if groups[&#39;ha_cluster&#39;][0] == &#34;host1&#34; %}
+        state MASTER
+        priority 100
+{% else %}
+        state BACKUP
+        priority 99
+{% endif %}
+        virtual_router_id 51
+        authentication {
+                auth_type PASS
+                auth_pass SomePassword
+        }
+        virtual_ipaddress {
+               {{ virt_ip }}
+        }
+}
+<span style=color:#75715e>{%</span> <span style=color:#66d9ef>endraw</span> <span style=color:#75715e>%}</span>
+</code></pre></div><hr><p>Lenže čo ak chcem pridať ďalších n serverov a možno ani neviem ich konečný počet? Môžem použit <code>for</code> loop. Loop pobeží toľko krát, koľko je serverov v inventory grupe <code>ha_cluster</code>. <code>priority</code> je odstránená z <code>if</code> podmienky a jej hodnota je vypočítaná v <code>{{ 100 - loop.index0 }}</code>. Cize každým loopom je hodnota o 1 menšia. To znamená, že MASTER server bude mať prioritu 100 a každy ďalší server o 1 menej.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-jinja data-lang=jinja><span style=color:#75715e>{%</span> <span style=color:#66d9ef>raw</span> <span style=color:#75715e>%}</span>
+vrrp_instance VI_1 {
+        interface eth0
+{% for host in groups[&#39;ha_cluster&#39;] %}
+{% if groups[&#39;ha_cluster&#39;][0] %}
+        state MASTER
+{% else %}
+        state BACKUP
+{% endif %}
+        priority {{ 100 - loop.index0 }}
+{% endfor %}
+        virtual_router_id 51
+        authentication {
+                auth_type PASS
+                auth_pass SomePassword
+        }
+        virtual_ipaddress {
+               {{ virt_ip }}
+        }
+}
+<span style=color:#75715e>{%</span> <span style=color:#66d9ef>endraw</span> <span style=color:#75715e>%}</span>
+</code></pre></div><p>Viac k prpíkazom v Jinja2 <a href=https://jinja.palletsprojects.com/en/2.11.x/templates/#list-of-control-structures>tu</a>.</p><hr><p>Referencie:</p><p><a href=https://jinja.palletsprojects.com/en/2.11.x/templates>Kompletná dokumentácia k Jinja2</a></p><p><a href=https://docs.ansible.com/ansible/latest/user_guide/playbooks_templating.html>Dokumentácia k Ansible Templating</a></p><hr></div><div class="row pl-3 pr-3"><div class="col-md-6 share-buttons"><strong>Share on:</strong>
+<a class="btn btn-sm facebook-btn" href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fmonolithprojects.github.io%2fposts%2fslovak%2ftech%2fansibletemplating%2f" target=_blank><i class="fab fa-facebook"></i></a><a class="btn btn-sm twitter-btn" href="https://twitter.com/share?url=https%3a%2f%2fmonolithprojects.github.io%2fposts%2fslovak%2ftech%2fansibletemplating%2f&text=Ansible%20templating&via=Satellite" target=_blank><i class="fab fa-twitter"></i></a><a class="btn btn-sm reddit-btn" href="https://reddit.com/submit?url=https%3a%2f%2fmonolithprojects.github.io%2fposts%2fslovak%2ftech%2fansibletemplating%2f&title=Ansible%20templating" target=_blank><i class="fab fa-reddit"></i></a><a class="btn btn-sm linkedin-btn" href="https://www.linkedin.com/shareArticle?url=https%3a%2f%2fmonolithprojects.github.io%2fposts%2fslovak%2ftech%2fansibletemplating%2f&title=Ansible%20templating" target=_blank><i class="fab fa-linkedin"></i></a><a class="btn btn-sm whatsapp-btn" href="https://api.whatsapp.com/send?text=Ansible%20templating https%3a%2f%2fmonolithprojects.github.io%2fposts%2fslovak%2ftech%2fansibletemplating%2f" target=_blank><i class="fab fa-whatsapp"></i></a><a class="btn btn-sm email-btn" href="mailto:?subject=Ansible%20templating&body=https%3a%2f%2fmonolithprojects.github.io%2fposts%2fslovak%2ftech%2fansibletemplating%2f" target=_blank><i class="fas fa-envelope-open-text"></i></a></div><div class="col-md-6 btn-improve-page"><a href=https://github.com/monolithprojects/monolithprojects.github.io/edit/main/content/posts/slovak/tech/ansibletemplating/index.md title="Improve this page" target=_blank rel=noopener><i class="fas fa-code-branch"></i>Improve this page</a></div></div><hr><div class="row next-prev-navigator"><div class="col-md-6 previous-article"><a href=/posts/slovak/personal/iceland/ title="Naprieč Islandom" class="btn btn-outline-info"><div><i class="fas fa-chevron-circle-left"></i>Prev</div><div class=next-prev-text>Naprieč Islandom</div></a></div><div class="col-md-6 next-article"><a href=/posts/slovak/tech/docker1/ title="Docker Part 1." class="btn btn-outline-info"><div>Next <i class="fas fa-chevron-circle-right"></i></div><div class=next-prev-text>Docker Part 1.</div></a></div></div><hr></div></div></div><a id=scroll-to-top class=btn><i class="fas fa-chevron-circle-up"></i></a></section><section class=toc-section id=toc-section><div class=toc-holder><h5 class="text-center pl-3">Table of Contents</h5><hr><div class=toc><nav id=TableOfContents><ul><li><ul><li><a href=#ako-konfigurovať-servis>Ako konfigurovať servis</a></li><li><a href=#prečo-použivať-template>Prečo použivať template</a></li><li><a href=#ako-na-to>Ako na to</a></li><li><a href=#výrazy>Výrazy</a></li><li><a href=#príkazy>Príkazy</a></li></ul></li></ul></nav></div></div></section></div><footer class="container-fluid text-center align-content-center footer pb-2"><div class="container pt-5"><div class="row text-left"><div class="col-md-4 col-sm-12"><h5>Navigation</h5><ul><li class=nav-item><a class=smooth-scroll href=https://monolithprojects.github.io#about>About</a></li><li class=nav-item><a class=smooth-scroll href=https://monolithprojects.github.io#skills>Some of my skills</a></li><li class=nav-item><a class=smooth-scroll href=https://monolithprojects.github.io#experiences>Experiences</a></li><li class=nav-item><a class=smooth-scroll href=https://monolithprojects.github.io#recent-posts>Recent Posts</a></li></ul></div><div class="col-md-4 col-sm-12"><h5>Contact me:</h5><ul><li><a href=mailto:mike.muransky@gmail.com target=_blank rel=noopener><span><i class="fas fa-envelope"></i></span><span>mike.muransky@gmail.com</span></a></li></ul></div><div class="col-md-4 col-sm-12"><p>Stay up to date with email notification</p><form action="https://github.us1.list-manage.com/subscribe/post?u=19de52a4603135aae97163fd8&amp;amp;id=094a24c76e" method=post id=mc-embedded-subscribe-form name=mc-embedded-subscribe-form class=validate target=_blank novalidate><div class=form-group><input type=email class=form-control id=mce-EMAIL name=EMAIL aria-describedby=emailHelp placeholder="Enter email">
+<small id=emailHelp class="form-text text-muted">By entering your email address, you agree to receive the newsletter of this website.</small></div><button type=submit class="btn btn-info">Submit</button></form></div></div></div><hr><div class=container><div class="row text-left"><div class=col-md-4><a id=theme href=https://github.com/hossainemruz/toha target=_blank rel=noopener><img src=/images/theme-logo_hu8376fd15465fef26ffe66b6bcf0ca686_13669_32x0_resize_box_2.png alt="Toha Theme Logo">
+Toha</a></div><div class="col-md-4 text-center">© 2021 Copyright.</div><div class="col-md-4 text-right"><a id=hugo href=https://gohugo.io/ target=_blank rel=noopener>Powered by
+<img src=/images/hugo-logo.svg alt="Hugo Logo" height=18></a></div></div></div></footer><script type=text/javascript src=/js/jquery-3.4.1.min.js></script><script type=text/javascript src=/js/popper.min.js></script><script type=text/javascript src=/js/bootstrap.min.js></script><script type=text/javascript src=/js/navbar.js></script><script type=text/javascript src=/js/plyr.js></script><script type=text/javascript src=/js/main.js></script><script type=text/javascript defer src=/js/katex.min.js></script><script type=text/javascript defer src=/js/auto-render.min.js onload=renderMathInElement(document.body);></script><script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js></script><script src=/js/single.js></script><script>hljs.initHighlightingOnLoad();</script></body></html>
