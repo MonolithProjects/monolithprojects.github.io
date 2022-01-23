@@ -1,0 +1,71 @@
+# section information
+section:
+  name: Projects
+  id: projects
+  enable: true
+  weight: 5
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+# filter buttons
+buttons:
+- name: All
+  filter: "all"
+- name: Personal
+  filter: "personal"
+- name: Professional
+  filter: "professional"
+- name: Hobby
+  filter: "hobby"
+
+# your projects
+projects:
+- name: Role for GitHub Actions runner
+  logo: /images/sections/projects/ansible.png
+  role: Lead Developer
+  timeline: "Mar 2020 - Present"
+  repo: https://github.com/monolithprojects/ansible-github_actions_runner
+  summary: Ansible Role to deploy private GitHub Actions runner.
+  tags: ["personal", "ansible", "github", "cicd"]
+
+- name: Docker Compose for Hass.io
+  logo: /images/sections/projects/docker.svg
+  role: Lead Developer
+  timeline: "Sep 2018 - Present"
+  repo: https://github.com/MonolithProjects/hassio_docker-compose
+  #url: ""
+  summary: Alternative way how to deploy Home Assistant (HASS.IO)
+  tags: ["personal", "docker", "home-automation"]
+
+- name: Github Actions for Molecule
+  logo: /images/sections/projects/github.png
+  role: Lead Developer
+  timeline: "May 2020 - Present"
+  repo: https://github.com/MonolithProjects/action-molecule
+  summary: GitHub Actions to run Molecule for Ansible Roles testing.
+  tags: ["personal", "ansible", "molecule", "cicd"]
+
+- name: Terraform module for Libvirt
+  logo: /images/sections/projects/terraform.png
+  role: Lead Developer
+  timeline: "Dec 2020 - Present"
+  repo: https://github.com/MonolithProjects/terraform-libvirt-vm
+  summary: Terraform module to deploy Libvirt/KVM Virtual Machines.
+  tags: ["personal", "terraform", "libvirt"]
+
+- name: Role for RKE2
+  logo: /images/sections/projects/ansible.png
+  role: Lead Developer
+  timeline: "Mar 2021 - Present"
+  repo: https://github.com/lablabs/ansible-role-rke2
+  summary: Ansible Role for automate the deployment of Rancher's RKE2 Kubernetes cluster
+  tags: ["professional", "ansible", "rke2", "k8s"]
+
+- name: Walked across the Iceland
+  logo: /images/sections/projects/hiker.png
+  role: Lonley walker
+  timeline: "May 2013 - Jun 2013"
+  url: http://satellite.sk/posts/slovak/personal/iceland/
+  summary: In 2013 i decided to challenge my self and walk alone across the Iceland. :)
+  tags: ["hobby", "hiking", "iceland"]
