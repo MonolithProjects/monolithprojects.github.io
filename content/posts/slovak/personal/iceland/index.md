@@ -13,7 +13,7 @@ tags: ["personal", "slovak"]
 categories: ["personal"]
 ---
 
-Doslovný prepis zapiskov z mojej sólo cesty naprieč Islandom. Kračal som z Akureyri do Skogaru, od 18.6. do 8.7.2013.
+Doslovný prepis zapiskov z mojej sólo cesty naprieč Islandom (vrátane hrubiek:) ). Kračal som z Akureyri do Skogaru, od 18.6. do 8.7.2013. Spával som v stane, jedol dehydrovanu stravu, pil vodu z potokov a prameňov a bolo mu super. V polovici cesty sa mi rozbil fotoaparát, takže som fotil Šmejďáckym mobilom a par fotiek kde sa mi telefon ǔz vybil som použil z cesty na Island z roku 2014, kedy som kráčal zo Skogaru do Landmannalaugaru s bratom a kamarátmi.
 
 #### Utorok 18.6.2013
 
@@ -40,7 +40,7 @@ Doslovný prepis zapiskov z mojej sólo cesty naprieč Islandom. Kračal som z A
 - Za mestom si ešte upravujem veci v ruksaku. 
 - VYRÁŽAM. Šlapem po asfaltke smerom na juh. Super pocit. Ruksak je ťarcha bohova. Začína pršať. Po 8 km hľadám miesto pre stan. Rozkladám stan a zisťujem, že jeden prút je pokazený. Hreším jak pohan. Prestáva pršať a ja sa ukľudňujem. Z dreva som si vyrezal spojku na duralový prút a opravil ho. Nejem, idem rovno spať.
 
-{{< img src="/posts/slovak/personal/iceland/images/02.png" align="center" title="Vyrazam na cestu">}}
+{{< img src="/posts/slovak/personal/iceland/images/02.png" align="center" title="">}}
 
 #### Štvrtok 20.6.2013
 
@@ -48,13 +48,13 @@ Doslovný prepis zapiskov z mojej sólo cesty naprieč Islandom. Kračal som z A
 - Celý ďen je striedavo - prší / slnko.
 - Ku koncu dňa už fakt nevládzem. hľadám miesto na stan. Našiel som ho. Neďaleko je farma. Spravím si jesť. Pozriem mapu a idem spať. Je 18:00.
 
-{{< img src="/posts/slovak/personal/iceland/images/03.png" align="center" title="Vyrazam na cestu">}}
+{{< img src="/posts/slovak/personal/iceland/images/03.png" align="center" title="">}}
 
 #### Piatok 21.6.2013
 
 - Od rána je fajn počasie. Vyrážam o 9:15. Počasie je celý deň pekné. Konči asfaltka. Prišlo prvé brodenie cez rieku. Naštastie to bolo OK. Neďaleko rieky som sa utáboril. Je 17:00.  Je tu krásne. Aj počasie je super. Večer som sa poumýval - celý. Pobehujú mi tu ovce.
 
-{{< img src="/posts/slovak/personal/iceland/images/04.png" align="center" title="Vyrazam na cestu">}}
+{{< img src="/posts/slovak/personal/iceland/images/04.png" align="center" title="">}}
 
 #### Sobota 22.6.2013
 
@@ -65,7 +65,7 @@ Doslovný prepis zapiskov z mojej sólo cesty naprieč Islandom. Kračal som z A
 - Konečne som sa dostal na vysočinu. Je to tu ako na Mesiaci, ibaže so snehom :). Je tu ticho a počasie je super! Zajtra ma čaká Laugafell.
 - Boli tu dvaja na cross motorkách z niektorej z fariem.Tvrdili,že som šialený a ja, že oni :)
 
-{{< img src="/posts/slovak/personal/iceland/images/05.png" align="center" title="Vyrazam na cestu">}}
+{{< img src="/posts/slovak/personal/iceland/images/05.png" align="center" title="">}}
 
 #### Nedeľa 23.6.2013
 
@@ -73,7 +73,7 @@ Doslovný prepis zapiskov z mojej sólo cesty naprieč Islandom. Kračal som z A
 - Čakal som, že tak za 3-4 hoďky budem v Laugafell. Musel som sa brodiť snehom a blatom. Nebol som si istý kde presne na trase som. Orientácia bola na prd. Žiaden záchytný bod. Až po čase som videl ľadovec a už sa dalo ľahšie orientovať.Prvých 8km mi trvalo prejsť 4 hodiny ! Ďalších 8km už 2 hodiny.
 - Laugafell - vlajka nieje na žrdi, čiže nikto by tam nemal byť. Naozaj su chatky prázdne a zamknuté. WC je otvorené. Je tu paráda. Teplý prameň s jazierkom. Užívam si. Najskôr som myslel, že tu ostanem aj zajtra, ale radšej pôjdem ďalej. No vyrazím až okolo obeda. Ešte sa chcem okúpať :) Jo a sú posrate male komare!
 
-{{< img src="/posts/slovak/personal/iceland/images/06.png" align="center" title="Vyrazam na cestu">}}
+{{< img src="/posts/slovak/personal/iceland/images/06.png" align="center" title="">}}
 
 #### Pondelok 24.6.2013
 
@@ -83,14 +83,14 @@ Doslovný prepis zapiskov z mojej sólo cesty naprieč Islandom. Kračal som z A
 - Našiel som na stane dierku. Nič vážne. Zajtra zalepím.
 
 
-{{< img src="/posts/slovak/personal/iceland/images/07.png" align="center" title="Vyrazam na cestu">}}
+{{< img src="/posts/slovak/personal/iceland/images/07.png" align="center" title="">}}
 
 #### Utorok 25.6.2013
 
 - Dnes to bol mazec. Dal som trasu ktorú ôsom mal určenú na utorok aj stredu. Aspoň budem môcť ísť voľnejšie cez pohorie (alebo údolie... ešte uvidím). Zlialo ma.
 - Teraz sedím pri chatkách v Nyidalur a pozerám jak dvaja s tereniakom nevedia postaviť stan. Auto ma kolesa jak prasa veľké.
 
-{{< img src="/posts/slovak/personal/iceland/images/08.png" align="center" title="Vyrazam na cestu">}}
+{{< img src="/posts/slovak/personal/iceland/images/08.png" align="center" title="">}}
 
 #### Streda 26.6.2013
 
@@ -99,7 +99,7 @@ Doslovný prepis zapiskov z mojej sólo cesty naprieč Islandom. Kračal som z A
 - Dávam si voľný deň v Nyidalur. Som nevyspatý.
 - Stretávam strǎžcu národneho parku. Povedal mi, že neprejdem okolo ľadovca Vatnajokull. Voda z ladovca vyhĺbila hlboké koryto a neprejdú tam ani oni autom. Škoda. Budem musieť ísť cez Springsandur.
 
-{{< img src="/posts/slovak/personal/iceland/images/09.png" align="center" title="Vyrazam na cestu">}}
+{{< img src="/posts/slovak/personal/iceland/images/09.png" align="center" title="">}}
 
 
 #### Štvrtok 27.6.2013
@@ -109,7 +109,7 @@ Doslovný prepis zapiskov z mojej sólo cesty naprieč Islandom. Kračal som z A
 - Odfúklo mi veľkú plastovú flašu na vodu, takže mám iba dve malé.
 - K večeru prestalo pršať. Uvidím ako bude zajtra. Nečakám dobré počasie.
 
-{{< img src="/posts/slovak/personal/iceland/images/10.png" align="center" title="Vyrazam na cestu">}}
+{{< img src="/posts/slovak/personal/iceland/images/10.png" align="center" title="">}}
 
 #### Piatok (čierny) 28.6.2013
 
@@ -117,7 +117,7 @@ Doslovný prepis zapiskov z mojej sólo cesty naprieč Islandom. Kračal som z A
 - Pri fotení vietor prevrátil stojan a foťák spadol a poškodil sa objektív a najonet. Som na seba nasrany, lebo ma čaká najkrajšia časť Islandu.
 - Foťák síce fotí ale nedá sa nastaviť expozícia a všetko je tmavé.
 
-{{< img src="/posts/slovak/personal/iceland/images/11.png" align="center" title="Vyrazam na cestu">}}
+{{< img src="/posts/slovak/personal/iceland/images/11.png" align="center" title="">}}
 
 #### Sobota 29.6.2013
 
@@ -126,15 +126,104 @@ Doslovný prepis zapiskov z mojej sólo cesty naprieč Islandom. Kračal som z A
 - Dnes som zožral 4 čokolády. Takže mi dávky nevýdu do konca cesty. Čo už :)
 - Jo a porezal som sa keď som sa snažil opraviť foťák.
 
-{{< img src="/posts/slovak/personal/iceland/images/12.png" align="center" title="Vyrazam na cestu">}}
+{{< img src="/posts/slovak/personal/iceland/images/12.png" align="center" title="">}}
 
 #### Nedeľa 30.6.2013
 
 - Dnes bolo fajn počasie, ajkeď fúkals silný vietor. Fúkal zo severu, takže do chrbta.
 - Našiel som si nádherné miesto na stan. Hneď vedľa prameňa.
 
-{{< img src="/posts/slovak/personal/iceland/images/13.png" align="center" title="Vyrazam na cestu">}}
+{{< img src="/posts/slovak/personal/iceland/images/13.png" align="center" title="">}}
 
-## Pokračovanie nabudúce... :)
+#### Pondelok 1.7.2013
+
+- Začal som šlapať trocha neskôr (cca o 10:00) aby dnes skončil neskôr, lebo potom večer iba o jedle rozmýšľam.
+- Prešiel som cca 30km
+- Srali ma zas tie pakomáre
+- Večer som si našiel super flek pri moste/elektrárni. Aj s prameňom. Ani som nedúfal. Zatra ma čaká lávove pole a konečne camp.
+
+{{< img src="/posts/slovak/personal/iceland/images/14.jpg" align="center" title="">}}
+
+#### Utorok 2.7.2013
+
+- Ráno som stretol pár z Austrálie. Stopovali do Landmannalaugar campu. Boli aj na Slovensku.
+- Šlapalo sa mi dobre, ale nevedel som sa dočkať campu.
+- Po 26km som dorazil do ciela. Ked som si kupoval lístok pre stan, za mnou dorazili aj Australčania. Čakali 5 hodín na odvoz.
+- Je to tu nádherné! Niečo také som ešte nevidel.
+- Od zajtra ma čaká flákareň. Iba cca 11km na deň.
+- Sú tu Česi - cely autobus. Majú pivo.
+- Jo a v bufete som si kúpil Snickers. Stál ma 4 Eura :)
+
+{{< img src="/posts/slovak/personal/iceland/images/15.jpg" align="center" title="">}}
+
+#### Streda 3.7.2013
+
+- Nádherné ráno. Na oblohe ani mráčik.
+- Vyrážam okolo 10tej ale pred tým som si kúpil Snickers. Zase.
+- Pri balení stanu ma zastavil chlapík a začal sa vypytovať. A zrazu, že pracuje pre Islandske radio a, že či môže so mnou spraviť rozhovor. Trepal som bludy :)
+- Cesta ubieha v pohode. Nádherný výhľad. Pri chate Hi(neprečitatelny nazov...) prišla hmla a začalo pršať. Utáboril som sa asi 1,5km za chatou.
+- Dnes som prešiel asi 10km. Cestu komplikovalo veľa mokreho snehu.
+
+{{< img src="/posts/slovak/personal/iceland/images/16.jpg" align="center" title="">}}
+
+#### Štvrtok 4.7.2013
+
+- Zobudil som sa okolo 4 ráno. Na stane mam sneh. Odzipsujem stan a vidím ako sneží. Išiel som ďalej spať.
+- Ráno padal dážď. Sneh na stane sa roztopil. Balím sa. Stan je hnusne mokrý.
+- Cesta zbehla rýchlo.
+- Zostávam v campe pri jazere.
+- Nazbieralo sa tu dosť ľudí.
+- Stále prší a do zajtra asi neprestane.:( Zase ma bude čakať mokre balenie.
+
+{{< img src="/posts/slovak/personal/iceland/images/17.jpg" align="center" title="">}}
+
+#### Piatok 5.7.2013
+
+- Vstal som skoro rano. Zobudil ma ruch v campe.
+- Vyrazil som o 9tej.
+- Išlo sa mi fakt super. Užíval som si to. Ruksak má už len cca 20kg a je to cítiť.
+- Stretol som dve angličanky. Rieku brodili v topánkach.
+- Zase som išiel okolo jednej chaty. Utáboril som sa asi kilometer za ňou nech mám kľud.
+- Už by som zjedol niečo normalne a dal si aj Marlénku.
+
+{{< img src="/posts/slovak/personal/iceland/images/18.jpg" align="center" title="">}}
+
+#### Sobota 6.7.2013
+
+- Ráno lialo a v noci sa otočil smer vetra o 180 stupňov takže mi fúkalo rovno do vchodu. Stan je celý zadrbaný od čierného a mokrého piesku.
+- Čakal som do 11:00 či sa počasie zlepší. Nezlepšilo. Stan som balil za dažďa a vetra. Aj ja som už zadrbany.
+- Nešlo sa zle ale už mám asi toho dosť:)
+- Výhlady na kaňony a hory sú nádherné. Škoda, že nemám čím fotiť.
+- Camp Thorsmork je asi v najkrajšom údolí aké som kedy videl. Je to tu ako na inej planéte.
+- Dúvam, že zajtra bude počasie dobré, lebo ma čaká stúpanie.
+
+{{< img src="/posts/slovak/personal/iceland/images/19.jpg" align="center" title="">}}
+
+#### Nedeľa 7.7.2013
+
+- Rozprávkové ráno. Modrá obloha.
+- Cesta je nádherná a výhľady mi tlačia slzy do oči:) Vrátim sa tu ešte isto.
+- Vyššie sa počasie začína zhoršovať. Je hmla a fúka silný vietor.
+- Nejako som v tej hmle minul chatu kde som chcel prespať. No asi kilometer od nej som našiel ďalšiu, ktorá je bez chatára (budem spať zadara)
+- Boli tu dvaja Nemci na bicykloch ale odišli. Za mnou dorazili 4 Slováci z Martina. Jeden pozná Šunavu a Petra Begu. Išli zo Skogaru. Najedli sa a idú nazad.
+- Počasie sa zhoršilo a vonku leje. Ostanem tu. Čítam Malého Princa. Ešte prišli dva páry.
+
+{{< img src="/posts/slovak/personal/iceland/images/20.jpg" align="center" title="">}}
+
+#### Pondelok 8.7.2013
+
+- Cesta do Skogaru ubehla rýchlo. Už som mal dosť šlapania :)
+- Hostel bol plný. Kašlem na to, stan je ako tak suchý, už ho nerozbalujem. Idem do hotela.
+- Stojí ma skoro 180 Eur na noc! Čo už. Musím sa dať do poriadku :D
+
+{{< img src="/posts/slovak/personal/iceland/images/21.jpg" align="center" title="">}}
 
 ---
+
+#### Návrat 2014
+
+O rok neskôr som sa na Island vrátil s bratom Janom a 3 kamarátmi. Išli sme zo Skogaru do Landmannalaugar.
+
+{{< img src="/posts/slovak/personal/iceland/images/comeback.jpg" align="center" title="">}}
+Z ľava Tomáš, ja, brat Jano, Lukáš, Edo fotí...
+
