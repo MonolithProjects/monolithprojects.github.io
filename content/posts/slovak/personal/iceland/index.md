@@ -1,6 +1,6 @@
 ---
 title: "Naprieč Islandom"
-date: 2022-01-23T01:50:25+02:00
+date: 2022-01-23
 description: Doslovny prepis poznamok z mojej solo cesty naprieč Islandom
 menu:
   sidebar:
@@ -13,7 +13,9 @@ tags: ["personal", "slovak"]
 categories: ["personal"]
 ---
 
-Doslovný prepis zapiskov z mojej sólo cesty naprieč Islandom (vrátane hrubiek:) ). Kračal som z Akureyri do Skogaru, od 18.6. do 8.7.2013. Spával som v stane, jedol dehydrovanu stravu, pil vodu z potokov a prameňov a bolo mu super. V polovici cesty sa mi rozbil fotoaparát, takže som fotil Šmejďáckym mobilom a par fotiek kde sa mi telefon ǔz vybil som použil z cesty na Island z roku 2014, kedy som kráčal zo Skogaru do Landmannalaugaru s bratom a kamarátmi.
+Doslovný prepis zapiskov z mojej sólo cesty naprieč Islandom (vrátane hrubiek:) ). Kračal som z Akureyri do Skogaru, od 18.6. do 8.7.2013. Spával som v stane, jedol dehydrovanu stravu, pil vodu z potokov a prameňov a bolo mu super. Na orientaciu som použival topografické mapy a kompas. V polovici cesty sa mi rozbil fotoaparát, takže som fotil Šmejďáckym mobilom a par fotiek kde sa mi telefon ǔz vybil som použil z cesty na Island z roku 2014, kedy som kráčal zo Skogaru do Landmannalaugaru s bratom a kamarátmi.
+
+{{< img src="/posts/slovak/personal/iceland/images/map.png" align="center" title="Trasa">}}
 
 #### Utorok 18.6.2013
 
