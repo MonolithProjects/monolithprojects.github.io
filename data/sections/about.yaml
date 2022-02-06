@@ -41,7 +41,7 @@ badges:
 #   badge: "https://images.credly.com/size/680x680/images/f4bf92ed-8985-40b2-bc07-2f9308780854/kubernetes-security-specialist-logo-examdev.png"
 
 - type: certification
-  name: Certified Kubernetes Security Specialist
+  name: Certified Kubernetes Administrator
   url: "https://www.credly.com/badges/2a9d88be-c7da-435e-b938-9007b88a7430"
   badge: "https://images.credly.com/size/340x340/images/8b8ed108-e77d-4396-ac59-2504583b9d54/cka_from_cncfsite__281_29.png"
 
