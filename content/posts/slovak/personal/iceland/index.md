@@ -227,5 +227,5 @@ Doslovný prepis zapiskov z mojej sólo cesty naprieč Islandom (vrátane hrubie
 O rok neskôr som sa na Island vrátil s bratom Janom a 3 kamarátmi. Išli sme zo Skogaru do Landmannalaugar.
 
 {{< img src="/posts/slovak/personal/iceland/images/comeback.jpg" align="center" title="">}}
-Z ľava Tomáš, ja, brat Jano, Lukáš, Edo fotí...
+Z ľava Tomáš, ja, brat Jano, Lukáš, Rudo fotí...
 
