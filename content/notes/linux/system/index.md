@@ -45,3 +45,25 @@ sudo socat -d -d TCP-L:8500,bind=<node IP address>,fork TCP:localhost:8500
    ```bash
    sudo dnf system-upgrade reboot
    ```
+{{< /note >}}
+
+<!--Gnome Icon example-->
+{{< note title="Gnome Icon example" >}}
+
+```bash
+cat ~/.local/share/applications/spotify.desktop
+
+[Desktop Entry]
+Type=Application
+Encoding=UTF-8
+Name=Spotify
+Comment=Spotify
+Icon=/home/mike/.local/share/applications/spotify.png
+Exec=/var/lib/snapd/snap/bin/spotify
+Terminal=false
+Categories=Tags;Describing;Application
+```
+
+{{< /note >}}
+
+
