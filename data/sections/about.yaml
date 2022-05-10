@@ -36,14 +36,24 @@ socialLinks:
 
 badges:
 - type: certification
-  name: Certified Kubernetes Administrator
-  url: "https://www.credly.com/badges/2a9d88be-c7da-435e-b938-9007b88a7430"
-  badge: "https://images.credly.com/size/340x340/images/8b8ed108-e77d-4396-ac59-2504583b9d54/cka_from_cncfsite__281_29.png"
+  name: AWS
+  url: "https://aws.amazon.com/"
+  badge: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Feikatou.net%2Fblog%2Fuploads%2Flogo%2Faws.jpg&f=1&nofb=1"
 
 - type: certification
   name: Ansible
   url: "https://www.ansible.com/"
   badge: "https://github.com/ansible/logos/raw/main/vscode-ansible.png"
+
+- type: certification
+  name: GitHub Actions
+  url: "https://github.com/features/actions"
+  badge: "https://logos-download.com/wp-content/uploads/2016/09/GitHub_logo.png"
+
+- type: certification
+  name: Certified Kubernetes Administrator
+  url: "https://www.credly.com/badges/2a9d88be-c7da-435e-b938-9007b88a7430"
+  badge: "https://images.credly.com/size/340x340/images/8b8ed108-e77d-4396-ac59-2504583b9d54/cka_from_cncfsite__281_29.png"
 
 - type: certification
   name: Terraform
@@ -54,16 +64,6 @@ badges:
   name: Open-Stack
   url: "https://www.openstack.org/"
   badge: "https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-images-prod/openstack-logo/OpenStack-Logo-Mark.png"
-
-- type: certification
-  name: AWS
-  url: "https://aws.amazon.com/"
-  badge: "https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg"
-
-- type: certification
-  name: GitHub Actions
-  url: "https://github.com/features/actions"
-  badge: "https://logos-download.com/wp-content/uploads/2016/09/GitHub_logo.png"
 
 
 # - type: soft-skill-indicator
