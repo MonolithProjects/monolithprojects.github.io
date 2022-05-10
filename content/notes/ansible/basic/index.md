@@ -12,7 +12,7 @@ menu:
 <!-- Variable -->
 {{< note title="Serial tasks" >}}
 
-Ansible does not a have out-of-the-box feature which could make possible to run block of tasks in a serial way (the same as you can do with tasks in a playbooks).
+Ansible does not have a out-of-the-box feature which could make possible to run block of tasks in a serial way (the same as you can do with tasks in a playbooks).
 To owercome this disadvantage you can include the file with serial tasks like this:
 
 ```yaml
