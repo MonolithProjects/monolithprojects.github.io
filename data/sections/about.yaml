@@ -36,9 +36,9 @@ socialLinks:
 
 badges:
 - type: certification
-  name: AWS
-  url: "https://aws.amazon.com/"
-  badge: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Feikatou.net%2Fblog%2Fuploads%2Flogo%2Faws.jpg&f=1&nofb=1"
+  name: Certified Kubernetes Administrator
+  url: "https://www.credly.com/badges/2a9d88be-c7da-435e-b938-9007b88a7430"
+  badge: "https://images.credly.com/size/340x340/images/8b8ed108-e77d-4396-ac59-2504583b9d54/cka_from_cncfsite__281_29.png"
 
 - type: certification
   name: Ansible
@@ -51,9 +51,9 @@ badges:
   badge: "https://logos-download.com/wp-content/uploads/2016/09/GitHub_logo.png"
 
 - type: certification
-  name: Certified Kubernetes Administrator
-  url: "https://www.credly.com/badges/2a9d88be-c7da-435e-b938-9007b88a7430"
-  badge: "https://images.credly.com/size/340x340/images/8b8ed108-e77d-4396-ac59-2504583b9d54/cka_from_cncfsite__281_29.png"
+  name: AWS
+  url: "https://aws.amazon.com/"
+  badge: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Feikatou.net%2Fblog%2Fuploads%2Flogo%2Faws.jpg&f=1&nofb=1"
 
 - type: certification
   name: Terraform
