@@ -52,8 +52,8 @@ badges:
 
 - type: certification
   name: AWS
-  url: "https://aws.amazon.com/"
-  badge: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Feikatou.net%2Fblog%2Fuploads%2Flogo%2Faws.jpg&f=1&nofb=1"
+  url: "https://www.credly.com/badges/f86d782f-d23c-49e7-8ed1-4bf6e3dfd702/linked_in_profile"
+  badge: "https://images.credly.com/size/340x340/images/0e284c3f-5164-4b21-8660-0d84737941bc/image.png"
 
 - type: certification
   name: Terraform
