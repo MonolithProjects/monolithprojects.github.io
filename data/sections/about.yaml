@@ -43,7 +43,7 @@ badges:
 - type: certification
   name: Ansible
   url: "https://www.ansible.com/"
-  badge: "https://github.com/ansible/logos/raw/main/vscode-ansible.png"
+  badge: "https://github.com/ansible/logos/blob/main/vscode-ansible-logo/vscode-ansible.png"
 
 - type: certification
   name: GitHub Actions
