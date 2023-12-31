@@ -66,4 +66,11 @@ Categories=Tags;Describing;Application
 
 {{< /note >}}
 
+<!-- Search and delete-->
+{{< note title="Search and delete directories" >}}
 
+```bash
+find . -type d -name "<directory name>" -exec rm -rf {} +
+```
+
+{{< /note >}}
