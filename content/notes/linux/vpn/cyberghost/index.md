@@ -66,3 +66,4 @@ VPN connection established.
 ╰─➤  sudo cyberghostvpn --status
 VPN connections found.
 ```
+{{< /note >}}

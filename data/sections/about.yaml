@@ -7,17 +7,17 @@ section:
   showOnNavbar: true
   template: sections/about.html
 
-designation: Cloud Engineer
+designation: Cloud Platform Engineer
 # your company information
 company:
-  name: Labyrinth Labs s.r.o.
-  url: "https://www.lablabs.io"
+  name: EMBL
+  url: "https://www.embl.org"
 
 # your resume. this file path should be relative to you "static" directory
 resume: "files/resume.pdf"
 
 # a summary about you
-summary: 'I am an experienced cloud engineer with passion for automation and open-source. At Labyrinth Labs i help our customers to build, run and automate their infrastructure in public cloud. BTW if you are wondering why "satellite", well this web page was originally an overview, a dashboard of my projects. But  over the time it growed-up to my personal web page. :)'
+summary: 'I am a cloud engineer with a lot of experience who loves making things easier with automation and open-source tools. At EMBL, I am focused on building and managing an on-prem cloud infrastructure. Oh, and about "satellite" - this webpage started as a summary of my projects but turned into my own personal site over time. :)'
 
 # your social links
 # give as many as you want. use font-awesome for the icons.
@@ -30,9 +30,9 @@ socialLinks:
   icon: "fab fa-linkedin"
   url: "https://www.linkedin.com/in/michal-muransk%C3%BD-02a56144"
 
-- name: Twitter
-  icon: "fab fa-twitter"
-  url: "https://twitter.com/MonolithSVK"
+- name: Instagram
+  icon: "fab fa-instagram"
+  url: "https://www.instagram.com/mike.muransky"
 
 badges:
 - type: certification

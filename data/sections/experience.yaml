@@ -10,6 +10,18 @@ section:
 # Your experiences
 experiences:
 - company:
+    name: European Molecular Biology Laboratory.
+    url: "https://embl.org"
+    location: Heidelberg, Germany
+    # company overview
+    overview: EMBL is Europe's flagship laboratory for the life sciences.
+  positions:
+  - designation: Cloud / DevOps Engineer
+    start: Feb 2024
+    responsibilities:
+    - Maintaining and developing on-prem Cloud infrastructure.
+
+- company:
     name: Labyrinth Labs.
     url: "https://lablabs.io"
     location: Bratislava, Slovakia
@@ -18,6 +30,7 @@ experiences:
   positions:
   - designation: Cloud / DevOps Engineer
     start: Mar 2021
+    end: Dec 2023
     responsibilities:
     - As a member of a small team of experts i am helping companies to build, automate and operate their cloud infrastructure.
 
