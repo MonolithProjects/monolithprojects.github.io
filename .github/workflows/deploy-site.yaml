@@ -1,39 +1,37 @@
-name: Deploy to Github Pages
-
-# run when a commit is pushed to "source" branch
-on:
-  push:
-    branches:
-      - source
-
 jobs:
   deploy:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04          # 22.04 still works, but 24.04 is current
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
     steps:
-      # checkout to the commit that has been pushed
       - uses: actions/checkout@v4
         with:
-          submodules: true # Fetch Hugo themes (true OR recursive)
-          fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
+          submodules: true
+          fetch-depth: 0
 
-      # install Hugo
+      - name: Setup Go            # required for Hugo Modules
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.23'
+
+      - name: Setup Node          # required by Hugo 0.161 for PostCSS/Tailwind permissions
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: "0.153.2"
+          hugo-version: '0.161.1'
           extended: true
 
-      # build website
       - name: Build
         run: hugo --minify
 
-      # push the generated content into the `main` (former `master`) branch.
       - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4   # v3 → v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: main # if your main branch is `master` use that here.
+          publish_branch: main
           publish_dir: ./public
           cname: satellite.sk
