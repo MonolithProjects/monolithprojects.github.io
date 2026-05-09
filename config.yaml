@@ -1,5 +1,5 @@
 baseURL: https://monolithprojects.github.io
-languageCode: en-us
+locale: en-us
 title: "Satellite"
 
 # Use Hugo modules to add theme (replaces theme: "toha")
@@ -19,8 +19,8 @@ module:
 # Manage languages
 languages:
   en:
-    languageCode: en
-    languageName: English
+    locale: en
+    local: English
     title: "Satellite"
     weight: 1
 
