@@ -21,51 +21,58 @@ buttons:
 
 # your projects
 projects:
-- name: Role for GitHub Actions runner
+- name: Ansible role for RKE2
   logo: /images/sections/projects/ansible.png
-  role: Lead Developer
+  role: Author & maintainer
+  timeline: "Mar 2021 - Present"
+  repo: https://github.com/lablabs/ansible-role-rke2
+  summary: Ansible role to deploy and manage Rancher RKE2 Kubernetes clusters. ~1M downloads on Ansible Galaxy and ~500 GitHub stars - among the most-used RKE2 deployment roles in the community.
+  tags: ["professional", "ansible", "rke2", "k8s"]
+
+- name: Ansible role for GitHub Actions runner
+  logo: /images/sections/projects/ansible.png
+  role: Author & maintainer
   timeline: "Mar 2020 - Present"
   repo: https://github.com/monolithprojects/ansible-github_actions_runner
-  summary: Ansible Role to deploy private GitHub Actions runner.
+  summary: Ansible role to deploy and manage self-hosted GitHub Actions runners. ~300k downloads on Ansible Galaxy.
   tags: ["personal", "ansible", "github", "cicd"]
 
-- name: Docker Compose for Hass.io
-  logo: /images/sections/projects/docker.svg
-  role: Lead Developer
-  timeline: "Sep 2018 - Present"
-  repo: https://github.com/MonolithProjects/hassio_docker-compose
-  #url: ""
-  summary: Alternative way how to deploy Home Assistant (HASS.IO)
-  tags: ["personal", "docker", "home-automation"]
-
-- name: Github Actions for Molecule
+- name: GitHub Action for Molecule
   logo: /images/sections/projects/github.png
-  role: Lead Developer
+  role: Author & maintainer
   timeline: "May 2020 - Present"
   repo: https://github.com/MonolithProjects/action-molecule
-  summary: GitHub Actions to run Molecule for Ansible Roles testing.
+  summary: GitHub Action to run Molecule tests for Ansible roles - used in CI for both of my Ansible roles above.
   tags: ["personal", "ansible", "molecule", "cicd"]
 
 - name: Terraform module for Libvirt
   logo: /images/sections/projects/terraform.png
-  role: Lead Developer
+  role: Author
   timeline: "Dec 2020 - Present"
   repo: https://github.com/MonolithProjects/terraform-libvirt-vm
-  summary: Terraform module to deploy Libvirt/KVM Virtual Machines.
+  summary: Terraform module to provision Libvirt/KVM virtual machines on a hypervisor host.
   tags: ["personal", "terraform", "libvirt"]
 
-- name: Role for RKE2
-  logo: /images/sections/projects/ansible.png
-  role: Lead Developer
-  timeline: "Mar 2021 - Present"
-  repo: https://github.com/lablabs/ansible-role-rke2
-  summary: Ansible Role for automate the deployment of Rancher's RKE2 Kubernetes cluster
-  tags: ["professional", "ansible", "rke2", "k8s"]
+- name: Docker Compose for Home Assistant
+  logo: /images/sections/projects/docker.svg
+  role: Author
+  timeline: "Sep 2018 - Present"
+  repo: https://github.com/MonolithProjects/hassio_docker-compose
+  summary: Alternative way to deploy Home Assistant - Docker Compose instead of the Hass.io supervisor.
+  tags: ["personal", "docker", "home-automation"]
 
-- name: Walked across the Iceland
+- name: Ansible collection for WireGuard
+  logo: /images/sections/projects/ansible.png
+  role: Author & maintainer
+  timeline: "2022 - 2023"
+  repo: https://github.com/lablabs/ansible-collection-wireguard
+  summary: Ansible collection to deploy and manage WireGuard servers and peers.
+  tags: ["professional", "ansible", "wireguard", "vpn"]
+
+- name: Walking across Iceland
   logo: /images/sections/projects/hiker.png
-  role: Lonley walker
+  role: Solo walker
   timeline: "May 2013 - Jun 2013"
   url: https://monolithprojects.github.io/posts/slovak/personal/iceland
-  summary: In 2013 i decided to challenge my self and walk alone across the Iceland. :)
+  summary: In 2013 I decided to challenge myself and walked alone across Iceland.
   tags: ["hobby", "hiking", "iceland"]

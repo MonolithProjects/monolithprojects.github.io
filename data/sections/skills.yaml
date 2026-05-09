@@ -8,43 +8,43 @@ section:
   # hideTitle: true
 
 skills:
-- name: Kubernetes
-  logo: "/images/sections/skills/kubernetes.png"
-  summary: "Capable of building and troubleshooting Kubernetes clusters. Deploying and managing applications with helm or kustomize."
-  url: "https://kubernetes.io/"
+  - name: Kubernetes
+    logo: "/images/sections/skills/kubernetes.png"
+    summary: "Building, operating and troubleshooting Kubernetes clusters at scale - Kubespray and RKE2 on bare metal. Comfortable with Helm, Kustomize, custom operators, and the messy bits underneath."
+    url: "https://kubernetes.io/"
 
-- name: Ansible
-  logo: "/images/sections/skills/ansible.png"
-  summary: "Automating linux servers configuration and software management."
-  url: "https://ansible.com/"
+  - name: Cluster API & Metal3
+    logo: "/images/sections/skills/kubernetes.png"
+    summary: "Building a next-gen bare-metal cloud - declarative cluster lifecycle with CAPI, hardware provisioning with Metal3 and Ironic, managed via Rancher."
+    url: "https://cluster-api.sigs.k8s.io/"
 
-- name: Terraform
-  logo: "/images/sections/skills/terraform.png"
-  summary: "Building Infrastracture as a code. Creating reusable Terraform modules."
-  url: "https://www.terraform.io/"
+  - name: Ansible
+    logo: "/images/sections/skills/ansible.png"
+    summary: "Automating Linux server configuration and software lifecycle. Maintainer of two community Ansible roles with 1M+ Galaxy downloads and 800+ GitHub stars."
+    url: "https://ansible.com/"
 
-- name: Git
-  logo: /images/sections/skills/git.png
-  summary: "Experienced with git-based development. Mostly i use GitHub but also i have experience in working with GitLab."
-  url: "https://git-scm.com/"
+  - name: GitOps & CI/CD
+    logo: /images/sections/skills/cicd.png
+    summary: "Argo CD for continuous delivery, GitHub Actions and GitLab CI for the build side. Strong preference for GitOps over imperative pipelines whenever the use case allows."
 
-- name: CI/CD
-  logo: /images/sections/skills/cicd.png
-  summary: "Creating complex multistage pipelines for continuous integration, continuous delivery, and continuous deployment. Most of my experience are in GitHub Actions, GitLab CI/CD and ArgoCD. Passionate about GitOps and git flow."
+  - name: Observability
+    logo: /images/sections/skills/prometheus.png
+    summary: "Prometheus, Thanos, Loki, Grafana, Graylog, OpenSearch - running the whole stack. Comfortable in PromQL and Alertmanager."
+    url: "https://prometheus.io/"
 
-- name: Cloud Computing
-  logo: "/images/sections/skills/cloud.png"
-  summary: "Worked with most of the major public clouds with main focus on AWS. For several years i parcipated on building a private cloud based on OpenStack."
+  - name: Linux servers
+    logo: "/images/sections/skills/linux.png"
+    summary: "10+ years managing Linux servers - RHEL, Rocky, Ubuntu - across telco and research environments. Moving from configuration management toward immutable, image-based hosts."
 
-- name: Prometheus and Thanos
-  logo: /images/sections/skills/prometheus.png
-  summary: "Capable of setup, configure Prometheus and Thanos. Experienced with PromQL, AlertManager."
-  url: "https://prometheus.io/"
+  - name: Cloud (public & private)
+    logo: "/images/sections/skills/cloud.png"
+    summary: "Worked with the major public clouds, AWS most. Several years on a private OpenStack cloud. Currently focused on bare-metal as a third option."
 
-- name: Linux servers
-  logo: "/images/sections/skills/linux.png"
-  summary: "I have 10+ years experience of managing Linux servers (RHEL, CentOS, Ubuntu) mainly in telco industry."
+  - name: Bash & Python
+    logo: "/images/sections/skills/python.png"
+    summary: "Bash for the everyday glue, Python when the glue gets too sticky."
 
-- name: Python
-  logo: "/images/sections/skills/python.png"
-  summary: "Along with bash scripting i can code in Python language."
+  - name: Git
+    logo: /images/sections/skills/git.png
+    summary: "Git-based development across GitHub and GitLab. Branching strategies, rebasing, conflict resolution - the daily grammar."
+    url: "https://git-scm.com/"

@@ -5,7 +5,7 @@ section:
   weight: 3
   showOnNavbar: true
   # Can optionally hide the title in sections
-  # hideTitle: true 
+  # hideTitle: true
 
 # Your experiences
 experiences:
@@ -16,10 +16,13 @@ experiences:
     # company overview
     overview: EMBL is Europe's flagship laboratory for the life sciences.
   positions:
-  - designation: Cloud / DevOps Engineer
+  - designation: Senior Cloud Engineer
     start: Feb 2024
     responsibilities:
-    - Maintaining and developing on-prem Cloud infrastructure.
+      - Operating and evolving on-prem Kubernetes clusters running scientific workloads.
+      - Designing the next-generation bare-metal cloud platform built around Cluster API and GitOps.
+      - Automating infrastructure end-to-end - from server provisioning to application delivery.
+      - Running the platform's observability and multi-tenancy layers.
 
 - company:
     name: Labyrinth Labs.
