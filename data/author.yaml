@@ -2,7 +2,7 @@ name: "Michal Muransky"
 nickname: "Mike"
 
 greeting: "Hi there, I am"
-image: "images/author/mike.png"
+image: "images/author/me.jpeg"
 
 contactInfo:
   email: "mike.muransky@protonmail.com"
@@ -11,7 +11,8 @@ contactInfo:
   # phone: "+421"
 
 summary:
-  - I am a Cloud Engineer
-  - DevOps positive
-  - Fascinated by Space science
-  - Camping and Bushcraft enthusiast
+  - "I run Kubernetes on metal - bare metal"
+  - "Open source maintainer when nobody's watching"
+  - "Happiest somewhere with no signal and a fire"
+  - "DevOps, but the calm kind"
+  - "I edit YAML for a living"
