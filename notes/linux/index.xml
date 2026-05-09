@@ -1,4 +1,38 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Linux Notes on Satellite</title><link>https://monolithprojects.github.io/notes/linux/</link><description>Recent content in Linux Notes on Satellite</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://monolithprojects.github.io/notes/linux/index.xml" rel="self" type="application/rss+xml"/><item><title>System</title><link>https://monolithprojects.github.io/notes/linux/system/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://monolithprojects.github.io/notes/linux/system/</guid><description>Forward from localhost to the outside world sudo socat -d -d TCP-L:8500,bind=&amp;lt;node IP address&amp;gt;,fork TCP:localhost:8500 Fedora Upgrade First run this command and reboot your computer:
-sudo dnf upgrade --refresh Install the dnf-plugin-system-upgrade package if it is not currently installed:
-sudo dnf install dnf-plugin-system-upgrade Download the updated packages:
-sudo dnf system-upgrade download --refresh --releasever=&amp;lt;your destination version&amp;gt; If some of your packages have unsatisfied dependencies, the upgrade will refuse to continue until you run it again with an extra --allowerasing option.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Linux Notes on Satellite</title><link>https://monolithprojects.github.io/notes/linux/</link><description>Recent content in Linux Notes on Satellite</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="https://monolithprojects.github.io/notes/linux/index.xml" rel="self" type="application/rss+xml"/><item><title>CyberGhost</title><link>https://monolithprojects.github.io/notes/linux/vpn/cyberghost/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://monolithprojects.github.io/notes/linux/vpn/cyberghost/</guid><description>&lt;div class="note-card "&gt;
+&lt;div class="item"&gt;
+&lt;h5 class="note-title"&gt;&lt;span&gt;CyberGhost in Fedora&lt;/span&gt;&lt;/h5&gt;
+&lt;div class="card"&gt;
+&lt;div class="card-body"&gt;&lt;p&gt;Currently the installation script for Cyber Ghost VPN client does not support Fedora 32. Since the &lt;code&gt;cyberghostvpn&lt;/code&gt; client works
+on Fedora 32 just fine, let see how we can make the installation to work.&lt;/p&gt;
+&lt;h3 id="how-to-do-it"&gt;How to do it&lt;/h3&gt;
+&lt;p&gt;Go to &lt;a href="https://my.cyberghostvpn.com/en_US/devices/desktop/add-linux" target="_blank" rel="noopener"&gt;Cyber Ghost&lt;/a&gt; web page and download the installation package for Fedora 31.
+Unpack the Zip file. Open the &lt;code&gt;install.sh&lt;/code&gt; script. Go to the line number 63 and paste the code snippet right after the &lt;code&gt;elif&lt;/code&gt; condition which is checking if you are running Fedora 31. With this new &lt;code&gt;elif&lt;/code&gt; condition you will tell the script that it is totally OK to have Fedora 32 and glibc v2.31 :-).&lt;/p&gt;</description></item><item><title>System</title><link>https://monolithprojects.github.io/notes/linux/system/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://monolithprojects.github.io/notes/linux/system/</guid><description>&lt;!-- Forward Traffic--&gt;
+&lt;div class="note-card "&gt;
+&lt;div class="item"&gt;
+&lt;h5 class="note-title"&gt;&lt;span&gt;Forward from localhost to the outside world&lt;/span&gt;&lt;/h5&gt;
+&lt;div class="card"&gt;
+&lt;div class="card-body"&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo socat -d -d TCP-L:8500,bind&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&amp;lt;node IP address&amp;gt;,fork TCP:localhost:8500
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- Fedora Upgrade --&gt;
+&lt;div class="note-card "&gt;
+&lt;div class="item"&gt;
+&lt;h5 class="note-title"&gt;&lt;span&gt;Fedora Upgrade&lt;/span&gt;&lt;/h5&gt;
+&lt;div class="card"&gt;
+&lt;div class="card-body"&gt;&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;First run this command and reboot your computer:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo dnf upgrade --refresh
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Install the dnf-plugin-system-upgrade package if it is not currently installed:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo dnf install dnf-plugin-system-upgrade
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Download the updated packages:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo dnf system-upgrade download --refresh --releasever&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&amp;lt;your destination version&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If some of your packages have unsatisfied dependencies, the upgrade will refuse to continue until you run it again with an extra &lt;code&gt;--allowerasing&lt;/code&gt; option.&lt;/p&gt;</description></item></channel></rss>

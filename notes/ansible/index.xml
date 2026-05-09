@@ -1,2 +1,18 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ansible Notes on Satellite</title><link>https://monolithprojects.github.io/notes/ansible/</link><description>Recent content in Ansible Notes on Satellite</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://monolithprojects.github.io/notes/ansible/index.xml" rel="self" type="application/rss+xml"/><item><title>Workarounds</title><link>https://monolithprojects.github.io/notes/ansible/basic/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://monolithprojects.github.io/notes/ansible/basic/</guid><description>Serial tasks Ansible does not have a out-of-the-box feature which could make possible to run block of tasks in a serial way (the same as you can do with tasks in a playbooks). To owercome this disadvantage you can include the file with serial tasks like this:
-- name: Run tasks per node in serial mode ansible.builtin.include_tasks: serial_pipe.yml with_items: &amp;#34;{{ groups.all }}&amp;#34; loop_control: loop_var: _host_item when: hostvars[_host_item].inventory_hostname == inventory_hostname</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ansible Notes on Satellite</title><link>https://monolithprojects.github.io/notes/ansible/</link><description>Recent content in Ansible Notes on Satellite</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="https://monolithprojects.github.io/notes/ansible/index.xml" rel="self" type="application/rss+xml"/><item><title>Workarounds</title><link>https://monolithprojects.github.io/notes/ansible/basic/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://monolithprojects.github.io/notes/ansible/basic/</guid><description>&lt;!-- Variable --&gt;
+&lt;div class="note-card "&gt;
+&lt;div class="item"&gt;
+&lt;h5 class="note-title"&gt;&lt;span&gt;Serial tasks&lt;/span&gt;&lt;/h5&gt;
+&lt;div class="card"&gt;
+&lt;div class="card-body"&gt;&lt;p&gt;Ansible does not have a out-of-the-box feature which could make possible to run block of tasks in a serial way (the same as you can do with tasks in a playbooks).
+To owercome this disadvantage you can include the file with serial tasks like this:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-yaml" data-lang="yaml"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;- &lt;span style="color:#f92672"&gt;name&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;Run tasks per node in serial mode&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;ansible.builtin.include_tasks&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;serial_pipe.yml&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;with_items&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#34;{{ groups.all }}&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;loop_control&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;loop_var&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;_host_item&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;when&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;hostvars[_host_item].inventory_hostname == inventory_hostname&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description></item></channel></rss>

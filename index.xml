@@ -1,118 +1,228 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Satellite</title><link>https://monolithprojects.github.io/</link><description>Recent content on Satellite</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 23 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://monolithprojects.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>CyberGhost</title><link>https://monolithprojects.github.io/notes/linux/vpn/cyberghost/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://monolithprojects.github.io/notes/linux/vpn/cyberghost/</guid><description>CyberGhost in Fedora Currently the installation script for Cyber Ghost VPN client does not support Fedora 32. Since the cyberghostvpn client works on Fedora 32 just fine, let see how we can make the installation to work.
-How to do it Go to Cyber Ghost web page and download the installation package for Fedora 31. Unpack the Zip file. Open the install.sh script. Go to the line number 63 and paste the code snippet right after the elif condition which is checking if you are running Fedora 31.</description></item><item><title>Fish Variables</title><link>https://monolithprojects.github.io/notes/fish/basic/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://monolithprojects.github.io/notes/fish/basic/</guid><description>Environmant Variable set -gx KUBECONFIG ~/.kube/my-cluster Remove Env variable set -e KUBECONFIG</description></item><item><title>Hacks</title><link>https://monolithprojects.github.io/notes/kubernetes/basic/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://monolithprojects.github.io/notes/kubernetes/basic/</guid><description>Serial tasks Remove a finalizer which got stuck.
-kubectl get ns &amp;lt;namespace name&amp;gt; -ojson | jq &amp;#39;.spec.finalizers = []&amp;#39; | kubectl replace --raw &amp;#34;/api/v1/namespaces/&amp;lt;namespace name&amp;gt;/finalize&amp;#34; -f -</description></item><item><title>System</title><link>https://monolithprojects.github.io/notes/linux/system/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://monolithprojects.github.io/notes/linux/system/</guid><description>Forward from localhost to the outside world sudo socat -d -d TCP-L:8500,bind=&amp;lt;node IP address&amp;gt;,fork TCP:localhost:8500 Fedora Upgrade First run this command and reboot your computer:
-sudo dnf upgrade --refresh Install the dnf-plugin-system-upgrade package if it is not currently installed:
-sudo dnf install dnf-plugin-system-upgrade Download the updated packages:
-sudo dnf system-upgrade download --refresh --releasever=&amp;lt;your destination version&amp;gt; If some of your packages have unsatisfied dependencies, the upgrade will refuse to continue until you run it again with an extra --allowerasing option.</description></item><item><title>Workarounds</title><link>https://monolithprojects.github.io/notes/ansible/basic/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://monolithprojects.github.io/notes/ansible/basic/</guid><description>Serial tasks Ansible does not have a out-of-the-box feature which could make possible to run block of tasks in a serial way (the same as you can do with tasks in a playbooks). To owercome this disadvantage you can include the file with serial tasks like this:
-- name: Run tasks per node in serial mode ansible.builtin.include_tasks: serial_pipe.yml with_items: &amp;#34;{{ groups.all }}&amp;#34; loop_control: loop_var: _host_item when: hostvars[_host_item].inventory_hostname == inventory_hostname</description></item><item><title>Resultados de Búsqueda</title><link>https://monolithprojects.github.io/search/</link><pubDate>Tue, 08 Jun 2010 08:06:25 +0600</pubDate><guid>https://monolithprojects.github.io/search/</guid><description>Este archivo existe únicamente para responder a la URL /search con la plantilla de diseño search relacionada.
-No se muestra ningún contenido aquí, todo el contenido se basa en la plantilla layouts/page/search.html
-Establecer una prioridad muy baja en el mapa del sitio le dirá a los motores de búsqueda que éste no es un contenido importante.
-Esta implementación utiliza Fusejs, jquery y mark.js
-Configuración inicial La búsqueda depende del tipo de contenido de salida adicional de JSON en config.</description></item><item><title>Resultados de Búsqueda</title><link>https://monolithprojects.github.io/search/</link><pubDate>Tue, 08 Jun 2010 08:06:25 +0600</pubDate><guid>https://monolithprojects.github.io/search/</guid><description>Este archivo existe únicamente para responder a la URL /search con la plantilla de diseño search relacionada.
-No se muestra ningún contenido aquí, todo el contenido se basa en la plantilla layouts/page/search.html
-Establecer una prioridad muy baja en el mapa del sitio le dirá a los motores de búsqueda que éste no es un contenido importante.
-Esta implementación utiliza Fusejs, jquery y mark.js
-Configuración inicial La búsqueda depende del tipo de contenido de salida adicional de JSON en config.</description></item><item><title>Search Results</title><link>https://monolithprojects.github.io/search/</link><pubDate>Tue, 08 Jun 2010 08:06:25 +0600</pubDate><guid>https://monolithprojects.github.io/search/</guid><description>This file exists solely to respond to /search URL with the related search layout template.
-No content shown here is rendered, all content is based in the template layouts/page/search.html
-Setting a very low sitemap priority will tell search engines this is not important content.
-This implementation uses Fusejs, jquery and mark.js
-Initial setup Search depends on additional output content type of JSON in config.toml ``` [outputs] home = [&amp;ldquo;HTML&amp;rdquo;, &amp;ldquo;JSON&amp;rdquo;] ```</description></item><item><title>Search Results</title><link>https://monolithprojects.github.io/search/</link><pubDate>Tue, 08 Jun 2010 08:06:25 +0600</pubDate><guid>https://monolithprojects.github.io/search/</guid><description>This file exists solely to respond to /search URL with the related search layout template.
-No content shown here is rendered, all content is based in the template layouts/page/search.html
-Setting a very low sitemap priority will tell search engines this is not important content.
-This implementation uses Fusejs, jquery and mark.js
-Initial setup Search depends on additional output content type of JSON in config.toml ``` [outputs] home = [&amp;ldquo;HTML&amp;rdquo;, &amp;ldquo;JSON&amp;rdquo;] ```</description></item><item><title>Search Results</title><link>https://monolithprojects.github.io/search/</link><pubDate>Tue, 08 Jun 2010 08:06:25 +0600</pubDate><guid>https://monolithprojects.github.io/search/</guid><description>This file exists solely to respond to /search URL with the related search layout template.
-No content shown here is rendered, all content is based in the template layouts/page/search.html
-Setting a very low sitemap priority will tell search engines this is not important content.
-This implementation uses Fusejs, jquery and mark.js
-Initial setup Search depends on additional output content type of JSON in config.toml ``` [outputs] home = [&amp;ldquo;HTML&amp;rdquo;, &amp;ldquo;JSON&amp;rdquo;] ```</description></item><item><title>Search Results</title><link>https://monolithprojects.github.io/search/</link><pubDate>Tue, 08 Jun 2010 08:06:25 +0600</pubDate><guid>https://monolithprojects.github.io/search/</guid><description>This file exists solely to respond to /search URL with the related search layout template.
-No content shown here is rendered, all content is based in the template layouts/page/search.html
-Setting a very low sitemap priority will tell search engines this is not important content.
-This implementation uses Fusejs, jquery and mark.js
-Initial setup Search depends on additional output content type of JSON in config.toml ``` [outputs] home = [&amp;ldquo;HTML&amp;rdquo;, &amp;ldquo;JSON&amp;rdquo;] ```</description></item><item><title>Search Results</title><link>https://monolithprojects.github.io/search/</link><pubDate>Tue, 08 Jun 2010 08:06:25 +0600</pubDate><guid>https://monolithprojects.github.io/search/</guid><description>This file exists solely to respond to /search URL with the related search layout template.
-No content shown here is rendered, all content is based in the template layouts/page/search.html
-Setting a very low sitemap priority will tell search engines this is not important content.
-This implementation uses Fusejs, jquery and mark.js
-Initial setup Search depends on additional output content type of JSON in config.toml ``` [outputs] home = [&amp;ldquo;HTML&amp;rdquo;, &amp;ldquo;JSON&amp;rdquo;] ```</description></item><item><title>Search Results</title><link>https://monolithprojects.github.io/search/</link><pubDate>Tue, 08 Jun 2010 08:06:25 +0600</pubDate><guid>https://monolithprojects.github.io/search/</guid><description>This file exists solely to respond to /search URL with the related search layout template.
-No content shown here is rendered, all content is based in the template layouts/page/search.html
-Setting a very low sitemap priority will tell search engines this is not important content.
-This implementation uses Fusejs, jquery and mark.js
-Initial setup Search depends on additional output content type of JSON in config.toml ``` [outputs] home = [&amp;ldquo;HTML&amp;rdquo;, &amp;ldquo;JSON&amp;rdquo;] ```</description></item><item><title>Search Results</title><link>https://monolithprojects.github.io/search/</link><pubDate>Tue, 08 Jun 2010 08:06:25 +0600</pubDate><guid>https://monolithprojects.github.io/search/</guid><description>This file exists solely to respond to /search URL with the related search layout template.
-No content shown here is rendered, all content is based in the template layouts/page/search.html
-Setting a very low sitemap priority will tell search engines this is not important content.
-This implementation uses Fusejs, jquery and mark.js
-Initial setup Search depends on additional output content type of JSON in config.toml ``` [outputs] home = [&amp;ldquo;HTML&amp;rdquo;, &amp;ldquo;JSON&amp;rdquo;] ```</description></item><item><title>Search Results</title><link>https://monolithprojects.github.io/search/</link><pubDate>Tue, 08 Jun 2010 08:06:25 +0600</pubDate><guid>https://monolithprojects.github.io/search/</guid><description>This file exists solely to respond to /search URL with the related search layout template.
-No content shown here is rendered, all content is based in the template layouts/page/search.html
-Setting a very low sitemap priority will tell search engines this is not important content.
-This implementation uses Fusejs, jquery and mark.js
-Initial setup Search depends on additional output content type of JSON in config.toml ``` [outputs] home = [&amp;ldquo;HTML&amp;rdquo;, &amp;ldquo;JSON&amp;rdquo;] ```</description></item><item><title>Search Results</title><link>https://monolithprojects.github.io/search/</link><pubDate>Tue, 08 Jun 2010 08:06:25 +0600</pubDate><guid>https://monolithprojects.github.io/search/</guid><description>This file exists solely to respond to /search URL with the related search layout template.
-No content shown here is rendered, all content is based in the template layouts/page/search.html
-Setting a very low sitemap priority will tell search engines this is not important content.
-This implementation uses Fusejs, jquery and mark.js
-Initial setup Search depends on additional output content type of JSON in config.toml ``` [outputs] home = [&amp;ldquo;HTML&amp;rdquo;, &amp;ldquo;JSON&amp;rdquo;] ```</description></item><item><title>Search Results</title><link>https://monolithprojects.github.io/search/</link><pubDate>Tue, 08 Jun 2010 08:06:25 +0600</pubDate><guid>https://monolithprojects.github.io/search/</guid><description>This file exists solely to respond to /search URL with the related search layout template.
-No content shown here is rendered, all content is based in the template layouts/page/search.html
-Setting a very low sitemap priority will tell search engines this is not important content.
-This implementation uses Fusejs, jquery and mark.js
-Initial setup Search depends on additional output content type of JSON in config.toml ``` [outputs] home = [&amp;ldquo;HTML&amp;rdquo;, &amp;ldquo;JSON&amp;rdquo;] ```</description></item><item><title>Search Results</title><link>https://monolithprojects.github.io/search/</link><pubDate>Tue, 08 Jun 2010 08:06:25 +0600</pubDate><guid>https://monolithprojects.github.io/search/</guid><description>This file exists solely to respond to /search URL with the related search layout template.
-No content shown here is rendered, all content is based in the template layouts/page/search.html
-Setting a very low sitemap priority will tell search engines this is not important content.
-This implementation uses Fusejs, jquery and mark.js
-Initial setup Search depends on additional output content type of JSON in config.toml ``` [outputs] home = [&amp;ldquo;HTML&amp;rdquo;, &amp;ldquo;JSON&amp;rdquo;] ```</description></item><item><title>Search Results</title><link>https://monolithprojects.github.io/search/</link><pubDate>Tue, 08 Jun 2010 08:06:25 +0600</pubDate><guid>https://monolithprojects.github.io/search/</guid><description>This file exists solely to respond to /search URL with the related search layout template.
-No content shown here is rendered, all content is based in the template layouts/page/search.html
-Setting a very low sitemap priority will tell search engines this is not important content.
-This implementation uses Fusejs, jquery and mark.js
-Initial setup Search depends on additional output content type of JSON in config.toml ``` [outputs] home = [&amp;ldquo;HTML&amp;rdquo;, &amp;ldquo;JSON&amp;rdquo;] ```</description></item><item><title>Search Results</title><link>https://monolithprojects.github.io/search/</link><pubDate>Tue, 08 Jun 2010 08:06:25 +0600</pubDate><guid>https://monolithprojects.github.io/search/</guid><description>This file exists solely to respond to /search URL with the related search layout template.
-No content shown here is rendered, all content is based in the template layouts/page/search.html
-Setting a very low sitemap priority will tell search engines this is not important content.
-This implementation uses Fusejs, jquery and mark.js
-Initial setup Search depends on additional output content type of JSON in config.toml ``` [outputs] home = [&amp;ldquo;HTML&amp;rdquo;, &amp;ldquo;JSON&amp;rdquo;] ```</description></item><item><title>Search Results</title><link>https://monolithprojects.github.io/search/</link><pubDate>Tue, 08 Jun 2010 08:06:25 +0600</pubDate><guid>https://monolithprojects.github.io/search/</guid><description>This file exists solely to respond to /search URL with the related search layout template.
-No content shown here is rendered, all content is based in the template layouts/page/search.html
-Setting a very low sitemap priority will tell search engines this is not important content.
-This implementation uses Fusejs, jquery and mark.js
-Initial setup Search depends on additional output content type of JSON in config.toml ``` [outputs] home = [&amp;ldquo;HTML&amp;rdquo;, &amp;ldquo;JSON&amp;rdquo;] ```</description></item><item><title>Search Results</title><link>https://monolithprojects.github.io/search/</link><pubDate>Tue, 08 Jun 2010 08:06:25 +0600</pubDate><guid>https://monolithprojects.github.io/search/</guid><description>This file exists solely to respond to /search URL with the related search layout template.
-No content shown here is rendered, all content is based in the template layouts/page/search.html
-Setting a very low sitemap priority will tell search engines this is not important content.
-This implementation uses Fusejs, jquery and mark.js
-Initial setup Search depends on additional output content type of JSON in config.toml ``` [outputs] home = [&amp;ldquo;HTML&amp;rdquo;, &amp;ldquo;JSON&amp;rdquo;] ```</description></item><item><title>Search Results</title><link>https://monolithprojects.github.io/search/</link><pubDate>Tue, 08 Jun 2010 08:06:25 +0600</pubDate><guid>https://monolithprojects.github.io/search/</guid><description>This file exists solely to respond to /search URL with the related search layout template.
-No content shown here is rendered, all content is based in the template layouts/page/search.html
-Setting a very low sitemap priority will tell search engines this is not important content.
-This implementation uses Fusejs, jquery and mark.js
-Initial setup Search depends on additional output content type of JSON in config.toml ``` [outputs] home = [&amp;ldquo;HTML&amp;rdquo;, &amp;ldquo;JSON&amp;rdquo;] ```</description></item><item><title>Search Results</title><link>https://monolithprojects.github.io/search/</link><pubDate>Tue, 08 Jun 2010 08:06:25 +0600</pubDate><guid>https://monolithprojects.github.io/search/</guid><description>This file exists solely to respond to /search URL with the related search layout template.
-No content shown here is rendered, all content is based in the template layouts/page/search.html
-Setting a very low sitemap priority will tell search engines this is not important content.
-This implementation uses Fusejs, jquery and mark.js
-Initial setup Search depends on additional output content type of JSON in config.toml ``` [outputs] home = [&amp;ldquo;HTML&amp;rdquo;, &amp;ldquo;JSON&amp;rdquo;] ```</description></item><item><title>Search Results</title><link>https://monolithprojects.github.io/search/</link><pubDate>Tue, 08 Jun 2010 08:06:25 +0600</pubDate><guid>https://monolithprojects.github.io/search/</guid><description>This file exists solely to respond to /search URL with the related search layout template.
-No content shown here is rendered, all content is based in the template layouts/page/search.html
-Setting a very low sitemap priority will tell search engines this is not important content.
-This implementation uses Fusejs, jquery and mark.js
-Initial setup Search depends on additional output content type of JSON in config.toml ``` [outputs] home = [&amp;ldquo;HTML&amp;rdquo;, &amp;ldquo;JSON&amp;rdquo;] ```</description></item><item><title>Search Results</title><link>https://monolithprojects.github.io/search/</link><pubDate>Tue, 08 Jun 2010 08:06:25 +0600</pubDate><guid>https://monolithprojects.github.io/search/</guid><description>This file exists solely to respond to /search URL with the related search layout template.
-No content shown here is rendered, all content is based in the template layouts/page/search.html
-Setting a very low sitemap priority will tell search engines this is not important content.
-This implementation uses Fusejs, jquery and mark.js
-Initial setup Search depends on additional output content type of JSON in config.toml ``` [outputs] home = [&amp;ldquo;HTML&amp;rdquo;, &amp;ldquo;JSON&amp;rdquo;] ```</description></item><item><title>Search Results</title><link>https://monolithprojects.github.io/search/</link><pubDate>Tue, 08 Jun 2010 08:06:25 +0600</pubDate><guid>https://monolithprojects.github.io/search/</guid><description>This file exists solely to respond to /search URL with the related search layout template.
-No content shown here is rendered, all content is based in the template layouts/page/search.html
-Setting a very low sitemap priority will tell search engines this is not important content.
-This implementation uses Fusejs, jquery and mark.js
-Initial setup Search depends on additional output content type of JSON in config.toml ``` [outputs] home = [&amp;ldquo;HTML&amp;rdquo;, &amp;ldquo;JSON&amp;rdquo;] ```</description></item><item><title>Search Results</title><link>https://monolithprojects.github.io/search/</link><pubDate>Tue, 08 Jun 2010 08:06:25 +0600</pubDate><guid>https://monolithprojects.github.io/search/</guid><description>This file exists solely to respond to /search URL with the related search layout template.
-No content shown here is rendered, all content is based in the template layouts/page/search.html
-Setting a very low sitemap priority will tell search engines this is not important content.
-This implementation uses Fusejs, jquery and mark.js
-Initial setup Search depends on additional output content type of JSON in config.toml ``` [outputs] home = [&amp;ldquo;HTML&amp;rdquo;, &amp;ldquo;JSON&amp;rdquo;] ```</description></item><item><title>অনুসন্ধানের ফলাফল</title><link>https://monolithprojects.github.io/search/</link><pubDate>Tue, 08 Jun 2010 08:06:25 +0600</pubDate><guid>https://monolithprojects.github.io/search/</guid><description>This file exists solely to respond to /search URL with the related search layout template.
-No content shown here is rendered, all content is based in the template layouts/page/search.html
-Setting a very low sitemap priority will tell search engines this is not important content.
-This implementation uses Fusejs, jquery and mark.js
-Initial setup Search depends on additional output content type of JSON in config.toml ``` [outputs] home = [&amp;ldquo;HTML&amp;rdquo;, &amp;ldquo;JSON&amp;rdquo;] ```</description></item><item><title>অনুসন্ধানের ফলাফল</title><link>https://monolithprojects.github.io/search/</link><pubDate>Tue, 08 Jun 2010 08:06:25 +0600</pubDate><guid>https://monolithprojects.github.io/search/</guid><description>This file exists solely to respond to /search URL with the related search layout template.
-No content shown here is rendered, all content is based in the template layouts/page/search.html
-Setting a very low sitemap priority will tell search engines this is not important content.
-This implementation uses Fusejs, jquery and mark.js
-Initial setup Search depends on additional output content type of JSON in config.toml ``` [outputs] home = [&amp;ldquo;HTML&amp;rdquo;, &amp;ldquo;JSON&amp;rdquo;] ```</description></item><item><title>Naprieč Islandom</title><link>https://monolithprojects.github.io/posts/slovak/personal/iceland/</link><pubDate>Sun, 23 Jan 2022 00:00:00 +0000</pubDate><guid>https://monolithprojects.github.io/posts/slovak/personal/iceland/</guid><description>Doslovný prepis zapiskov z mojej sólo cesty naprieč Islandom (vrátane hrubiek:) ). Kračal som z Akureyri do Skogaru, od 18.6. do 8.7.2013. Spával som v stane, jedol dehydrovanu stravu, pil vodu z potokov a prameňov a bolo mu super. Na orientaciu som použival topografické mapy a kompas. V polovici cesty sa mi rozbil fotoaparát, takže som fotil Šmejďáckym mobilom a par fotiek kde sa mi telefon ǔz vybil som použil z cesty na Island z roku 2014, kedy som kráčal zo Skogaru do Landmannalaugaru s bratom a kamarátmi.</description></item><item><title>Ansible templating</title><link>https://monolithprojects.github.io/posts/slovak/tech/ansibletemplating/</link><pubDate>Sun, 23 Jan 2022 01:50:25 +0200</pubDate><guid>https://monolithprojects.github.io/posts/slovak/tech/ansibletemplating/</guid><description>V tomto blogu popíšem základné postupy pri generovaní (nie len) konfiguračných súborov pomocou Ansible a Jinja2 templatovacieho jazyka. Článok počíta s tým, že máš aspoň základné znalosti Ansible.
-Ako konfigurovať servis Pri automatizovanej konfiguracii servisov pomocou Ansible som sa stretol so 4 spôsobmi ako deploynuť servis na server ( ajkeď priznávam, že by sa našli aj nejaké iné/šialené spôsoby :-) ).
-Jednoducho nainštalovať servis s defaultnou konfiguraciou a teda s konfiguračným súborom servisu nerobiť nič.</description></item><item><title>Docker Part 1.</title><link>https://monolithprojects.github.io/posts/slovak/tech/docker1/</link><pubDate>Sun, 23 Jan 2022 01:50:25 +0200</pubDate><guid>https://monolithprojects.github.io/posts/slovak/tech/docker1/</guid><description>V tomto seriali by som chcel popísať, ako Docker vytvára kontainery.
-Čo je to kontajner Dnes existujú rôzne technológie, ktoré sa zaoberajú vytváraním kontajnerov. Dá sa dokonca povedať, že je okolo nich celkom pekný hype. Určite si už videl nejaké cool prezentácie o niečom čo sa volá Docker kde ti bolo jednoducho povedané, že Docker využíva namespaces, cgroups, chroot, atď. na vytváranie kontajnerov. Ale načo je toto všetko potrebné na vytvorenie kontajnera?</description></item><item><title>Open-Source Dashboard</title><link>https://monolithprojects.github.io/posts/opensource/</link><pubDate>Sun, 23 Jan 2022 01:50:25 +0200</pubDate><guid>https://monolithprojects.github.io/posts/opensource/</guid><description>This is a list, a kind of dashboard displaying all of my actively maintained open-source projects. The dashboard shows the last version of a project. It links to the source code repository and usually also to the packages. It shows also the state of the automated tests.
-Ansible roles List of Ansible roles and collections.
-https://img.shields.io/ansible/role/d/monolithprojects
-Role name Version Downloads Issues Pull requests github_actions_runner hashicorp_tools hassio homebrew http_proxy_client [ kasm_server [ system_update [ tfvars2facts user_management [ rke2 nexus_config Collection name Linting Action Releaseing Action Issues Pull requests wireguard Docker-compose List of docker-compose projects.</description></item><item><title>Prometheus</title><link>https://monolithprojects.github.io/notes/monitorng/prometheus/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://monolithprojects.github.io/notes/monitorng/prometheus/</guid><description>Prometheus Notes PromQL return 0 instead of ‘no data’ Add following to the end of your query
-OR on() vector(0) Prometheus uses label matching in expressions. If your expression returns anything with labels, it won&amp;rsquo;t match the time series generated by vector(0). In order to make this possible, it&amp;rsquo;s necessary to tell Prometheus explicitly to not trying to match any labels by adding on().</description></item><item><title>Search Results</title><link>https://monolithprojects.github.io/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://monolithprojects.github.io/search/</guid><description>This file exists solely to respond to /search URL with the related search layout template.
-No content shown here is rendered, all content is based in the template layouts/page/search.html
-Setting a very low sitemap priority will tell search engines this is not important content.
-This implementation uses Fusejs, jquery and mark.js
-Initial setup Search depends on additional output content type of JSON in config.toml ``` [outputs] home = [&amp;ldquo;HTML&amp;rdquo;, &amp;ldquo;JSON&amp;rdquo;] ```</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Satellite</title><link>https://monolithprojects.github.io/</link><description>Recent content on Satellite</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 23 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://monolithprojects.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Naprieč Islandom</title><link>https://monolithprojects.github.io/posts/slovak/personal/iceland/</link><pubDate>Sun, 23 Jan 2022 00:00:00 +0000</pubDate><guid>https://monolithprojects.github.io/posts/slovak/personal/iceland/</guid><description>&lt;p&gt;Doslovný prepis zapiskov z mojej sólo cesty naprieč Islandom (vrátane hrubiek:) ). Kračal som z Akureyri do Skogaru, od 18.6. do 8.7.2013. Spával som v stane, jedol dehydrovanu stravu, pil vodu z potokov a prameňov a bolo mu super. Na orientaciu som použival topografické mapy a kompas. V polovici cesty sa mi rozbil fotoaparát, takže som fotil Šmejďáckym mobilom a par fotiek kde sa mi telefon ǔz vybil som použil z cesty na Island z roku 2014, kedy som kráčal zo Skogaru do Landmannalaugaru s bratom a kamarátmi.&lt;/p&gt;</description></item><item><title>Ansible templating</title><link>https://monolithprojects.github.io/posts/slovak/tech/ansibletemplating/</link><pubDate>Sun, 23 Jan 2022 01:50:25 +0200</pubDate><guid>https://monolithprojects.github.io/posts/slovak/tech/ansibletemplating/</guid><description>&lt;p&gt;V tomto blogu popíšem základné postupy pri generovaní (nie len) konfiguračných súborov pomocou Ansible a Jinja2 templatovacieho jazyka. Článok počíta s tým, že máš aspoň základné znalosti Ansible.&lt;/p&gt;
+&lt;h3 id="ako-konfigurovať-servis"&gt;Ako konfigurovať servis&lt;/h3&gt;
+&lt;p&gt;Pri automatizovanej konfiguracii servisov pomocou Ansible som sa stretol so 4 spôsobmi ako deploynuť servis na server ( ajkeď priznávam, že by sa našli aj nejaké iné/šialené spôsoby :-) ).&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Jednoducho nainštalovať servis s defaultnou konfiguraciou a teda s konfiguračným súborom servisu nerobiť nič.&lt;/li&gt;
+&lt;li&gt;Nakopírovať na server už hotový konfigurák pre daný servis, použitím modulu &lt;code&gt;copy&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Editovať konfigurák na vzdialenom serveri napríklad pomocou modulu &lt;code&gt;lineinfile&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;A nakoniec s použi modulu &lt;code&gt;template&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id="prečo-použivať-template"&gt;Prečo použivať template&lt;/h3&gt;
+&lt;p&gt;Načo použivať Ansible modul &lt;code&gt;template&lt;/code&gt; a učiť sa syntax Jinja2, ak môžem použiť už hotový konfigurák? Fungovalo by to iba za predpokladu že je konfiguračný súbor statický a nič sa v ňom meniť nebude. V prípade, že sú v súbore jedna/dve dynamické premenné, dá sa ešte využiť Ansible modul &lt;code&gt;lineinfile&lt;/code&gt; a miesto v konfiguračnom súbore zmeniť priamo na serveri. No niekedy može byť &lt;code&gt;lineinfile&lt;/code&gt; trocha tricky. Najmä ak by si mal vytvárať krkolomné &lt;code&gt;regexp&lt;/code&gt; výrazy. Lenže čo v prípade, ak sa dynamicky menia celé časti konfiguračného súboru a ešte k tomu na základe rôznych podmienok?&lt;/p&gt;</description></item><item><title>Docker Part 1.</title><link>https://monolithprojects.github.io/posts/slovak/tech/docker1/</link><pubDate>Sun, 23 Jan 2022 01:50:25 +0200</pubDate><guid>https://monolithprojects.github.io/posts/slovak/tech/docker1/</guid><description>&lt;p&gt;V tomto seriali by som chcel popísať, ako Docker vytvára kontainery.&lt;/p&gt;
+&lt;h3 id="čo-je-to-kontajner"&gt;Čo je to kontajner&lt;/h3&gt;
+&lt;p&gt;Dnes existujú rôzne technológie, ktoré sa zaoberajú vytváraním kontajnerov. Dá sa dokonca povedať, že je okolo nich celkom pekný hype. Určite si už videl nejaké cool prezentácie o niečom čo sa volá Docker kde ti bolo jednoducho povedané, že Docker využíva namespaces, cgroups, chroot, atď. na vytváranie kontajnerov. Ale načo je toto všetko potrebné na vytvorenie kontajnera?
+Prečo to nieje jednoducho systémove volanie a hotovo? Pretože realita je taká, že kontajnery neexistujú - sú vymyslené. Nič také ako &amp;ldquo;linux container&amp;rdquo; v kerneli nieje. Kontajner patri do oblasti user space a teda mimo kernelu.&lt;/p&gt;</description></item><item><title>Open-Source Dashboard</title><link>https://monolithprojects.github.io/posts/opensource/</link><pubDate>Sun, 23 Jan 2022 01:50:25 +0200</pubDate><guid>https://monolithprojects.github.io/posts/opensource/</guid><description>&lt;p&gt;This is a list, a kind of dashboard displaying all of my actively maintained open-source projects. The dashboard shows the last version of a project. It links to the source code repository and usually also to the packages. It shows also the state of the automated tests.&lt;/p&gt;
+&lt;h3 id="ansible-roles"&gt;Ansible roles&lt;/h3&gt;
+&lt;p&gt;List of Ansible roles and collections.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://img.shields.io/ansible/role/d/monolithprojects" target="_blank" rel="noopener"&gt;https://img.shields.io/ansible/role/d/monolithprojects&lt;/a&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style="text-align: left"&gt;Role name&lt;/th&gt;
+&lt;th style="text-align: left"&gt;Version&lt;/th&gt;
+&lt;th&gt;Downloads&lt;/th&gt;
+&lt;th&gt;Issues&lt;/th&gt;
+&lt;th&gt;Pull requests&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;a href="https://galaxy.ansible.com/monolithprojects/github_actions_runner" target="_blank" rel="noopener"&gt;github_actions_runner&lt;/a&gt;&lt;/td&gt;
+&lt;td style="text-align: left"&gt;&lt;a href="https://github.com/MonolithProjects/ansible-github_actions_runner" target="_blank" rel="noopener"&gt;&lt;img src="https://img.shields.io/github/v/release/monolithprojects/ansible-github_actions_runner" alt="Last version"&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href="https://galaxy.ansible.com/monolithprojects/github_actions_runner" target="_blank" rel="noopener"&gt;&lt;img src="https://img.shields.io/ansible/role/d/monolithprojects/github_actions_runner" alt="Galaxy Downloads"&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href="https://github.com/monolithprojects/ansible-github_actions_runner/issues" target="_blank" rel="noopener"&gt;&lt;img src="https://img.shields.io/github/issues-raw/monolithprojects/ansible-github_actions_runner" alt="issues"&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href="https://github.com/monolithprojects/ansible-github_actions_runner/pulls" target="_blank" rel="noopener"&gt;&lt;img src="https://img.shields.io/github/issues-pr/monolithprojects/ansible-github_actions_runner" alt="pull requests"&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;a href="https://galaxy.ansible.com/monolithprojects/hashicorp_tools" target="_blank" rel="noopener"&gt;hashicorp_tools&lt;/a&gt;&lt;/td&gt;
+&lt;td style="text-align: left"&gt;&lt;a href="https://github.com/MonolithProjects/ansible-hashicorp_tools" target="_blank" rel="noopener"&gt;&lt;img src="https://img.shields.io/github/v/release/MonolithProjects/ansible-hashicorp_tools" alt="Last version"&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href="https://galaxy.ansible.com/monolithprojects/hashicorp_tools" target="_blank" rel="noopener"&gt;&lt;img src="https://img.shields.io/ansible/role/d/monolithprojects/hashicorp_tools" alt="Galaxy Downloads"&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href="https://github.com/monolithprojects/ansible-hashicorp_tools/issues" target="_blank" rel="noopener"&gt;&lt;img src="https://img.shields.io/github/issues-raw/monolithprojects/ansible-hashicorp_tools" alt="issues"&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href="https://github.com/monolithprojects/ansible-hashicorp_tools/pulls" target="_blank" rel="noopener"&gt;&lt;img src="https://img.shields.io/github/issues-pr/monolithprojects/ansible-hashicorp_tools" alt="pull requests"&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;a href="https://galaxy.ansible.com/monolithprojects/hassio" target="_blank" rel="noopener"&gt;hassio&lt;/a&gt;&lt;/td&gt;
+&lt;td style="text-align: left"&gt;&lt;a href="https://github.com/MonolithProjects/ansible-hassio" target="_blank" rel="noopener"&gt;&lt;img src="https://img.shields.io/github/v/release/MonolithProjects/ansible-hassio" alt="Last version"&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href="https://galaxy.ansible.com/monolithprojects/hassio" target="_blank" rel="noopener"&gt;&lt;img src="https://img.shields.io/ansible/role/d/monolithprojects/hassio" alt="Galaxy Downloads"&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href="https://github.com/monolithprojects/ansible-hassio/issues" target="_blank" rel="noopener"&gt;&lt;img src="https://img.shields.io/github/issues-raw/monolithprojects/ansible-hassio" alt="issues"&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href="https://github.com/monolithprojects/ansible-hassio/pulls" target="_blank" rel="noopener"&gt;&lt;img src="https://img.shields.io/github/issues-pr/monolithprojects/ansible-hassio" alt="pull requests"&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;a href="https://galaxy.ansible.com/monolithprojects/homebrew" target="_blank" rel="noopener"&gt;homebrew&lt;/a&gt;&lt;/td&gt;
+&lt;td style="text-align: left"&gt;&lt;a href="https://github.com/MonolithProjects/ansible-homebrew" target="_blank" rel="noopener"&gt;&lt;img src="https://img.shields.io/github/v/release/monolithprojects/ansible-homebrew" alt="Last version"&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href="https://galaxy.ansible.com/monolithprojects/homebrew" target="_blank" rel="noopener"&gt;&lt;img src="https://img.shields.io/ansible/role/d/monolithprojects/homebrew" alt="Galaxy Downloads"&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href="https://github.com/monolithprojects/ansible-homebrew/issues" target="_blank" rel="noopener"&gt;&lt;img src="https://img.shields.io/github/issues-raw/monolithprojects/ansible-homebrew" alt="issues"&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href="https://github.com/monolithprojects/ansible-homebrew/pulls" target="_blank" rel="noopener"&gt;&lt;img src="https://img.shields.io/github/issues-pr/monolithprojects/ansible-homebrew" alt="pull requests"&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;a href="https://galaxy.ansible.com/monolithprojects/http_proxy_client" target="_blank" rel="noopener"&gt;http_proxy_client&lt;/a&gt;&lt;/td&gt;
+&lt;td style="text-align: left"&gt;&lt;a href="https://github.com/MonolithProjects/ansible-http_proxy_client" target="_blank" rel="noopener"&gt;&lt;img src="https://img.shields.io/github/v/release/MonolithProjects/ansible-http_proxy_client" alt="Last version"&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;[&lt;img src="https://img.shields.io/ansible/role/d/monolithprojects/http_proxy_client" alt="Galaxy Downloads"&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href="https://github.com/monolithprojects/ansible-http_proxy_client/issues" target="_blank" rel="noopener"&gt;&lt;img src="https://img.shields.io/github/issues-raw/monolithprojects/ansible-http_proxy_client" alt="issues"&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href="https://github.com/monolithprojects/ansible-http_proxy_client/pulls" target="_blank" rel="noopener"&gt;&lt;img src="https://img.shields.io/github/issues-pr/monolithprojects/ansible-http_proxy_client" alt="pull requests"&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;a href="https://galaxy.ansible.com/monolithprojects/kasm_server" target="_blank" rel="noopener"&gt;kasm_server&lt;/a&gt;&lt;/td&gt;
+&lt;td style="text-align: left"&gt;&lt;a href="https://github.com/MonolithProjects/ansible-kasm_server" target="_blank" rel="noopener"&gt;&lt;img src="https://img.shields.io/github/v/release/MonolithProjects/ansible-kasm_server" alt="Last version"&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;[&lt;img src="https://img.shields.io/ansible/role/d/monolithprojects/kasm_server" alt="Galaxy Downloads"&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href="https://github.com/monolithprojects/ansible-kasm_server/issues" target="_blank" rel="noopener"&gt;&lt;img src="https://img.shields.io/github/issues-raw/monolithprojects/ansible-kasm_server" alt="issues"&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href="https://github.com/monolithprojects/ansible-kasm_server/pulls" target="_blank" rel="noopener"&gt;&lt;img src="https://img.shields.io/github/issues-pr/monolithprojects/ansible-kasm_server" alt="pull requests"&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;a href="https://galaxy.ansible.com/monolithprojects/system_update" target="_blank" rel="noopener"&gt;system_update&lt;/a&gt;&lt;/td&gt;
+&lt;td style="text-align: left"&gt;&lt;a href="https://github.com/MonolithProjects/ansible-system_update" target="_blank" rel="noopener"&gt;&lt;img src="https://img.shields.io/github/v/release/MonolithProjects/ansible-system_update" alt="Last version"&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;[&lt;img src="https://img.shields.io/ansible/role/d/monolithprojects/system_update" alt="Galaxy Downloads"&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href="https://github.com/monolithprojects/ansible-system_update/issues" target="_blank" rel="noopener"&gt;&lt;img src="https://img.shields.io/github/issues-raw/monolithprojects/ansible-system_update" alt="issues"&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href="https://github.com/monolithprojects/ansible-system_update/pulls" target="_blank" rel="noopener"&gt;&lt;img src="https://img.shields.io/github/issues-pr/monolithprojects/ansible-system_update" alt="pull requests"&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;a href="https://galaxy.ansible.com/monolithprojects/tfvars2facts" target="_blank" rel="noopener"&gt;tfvars2facts&lt;/a&gt;&lt;/td&gt;
+&lt;td style="text-align: left"&gt;&lt;a href="https://github.com/MonolithProjects/ansible-tfvars2facts" target="_blank" rel="noopener"&gt;&lt;img src="https://img.shields.io/github/v/release/MonolithProjects/ansible-tfvars2facts" alt="Last version"&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href="https://galaxy.ansible.com/monolithprojects/tfvars2facts" target="_blank" rel="noopener"&gt;&lt;img src="https://img.shields.io/ansible/role/d/monolithprojects/tfvars2facts" alt="Galaxy Downloads"&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href="https://github.com/monolithprojects/ansible-tfvars2facts/issues" target="_blank" rel="noopener"&gt;&lt;img src="https://img.shields.io/github/issues-raw/monolithprojects/ansible-tfvars2facts" alt="issues"&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href="https://github.com/monolithprojects/ansible-tfvars2facts/pulls" target="_blank" rel="noopener"&gt;&lt;img src="https://img.shields.io/github/issues-pr/monolithprojects/ansible-tfvars2facts" alt="pull requests"&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;a href="https://galaxy.ansible.com/monolithprojects/user_management" target="_blank" rel="noopener"&gt;user_management&lt;/a&gt;&lt;/td&gt;
+&lt;td style="text-align: left"&gt;&lt;a href="https://github.com/MonolithProjects/ansible-user_management" target="_blank" rel="noopener"&gt;&lt;img src="https://img.shields.io/github/v/release/MonolithProjects/ansible-user_management" alt="Last version"&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;[&lt;img src="https://img.shields.io/ansible/role/d/monolithprojects/user_management" alt="Galaxy Downloads"&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href="https://github.com/monolithprojects/ansible-user_management/issues" target="_blank" rel="noopener"&gt;&lt;img src="https://img.shields.io/github/issues-raw/monolithprojects/ansible-user_management" alt="issues"&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href="https://github.com/monolithprojects/ansible-user_management/pulls" target="_blank" rel="noopener"&gt;&lt;img src="https://img.shields.io/github/issues-pr/monolithprojects/ansible-user_management" alt="pull requests"&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;a href="https://galaxy.ansible.com/lablabs/rke2" target="_blank" rel="noopener"&gt;rke2&lt;/a&gt;&lt;/td&gt;
+&lt;td style="text-align: left"&gt;&lt;a href="https://github.com/lablabs/ansible-role-rke2" target="_blank" rel="noopener"&gt;&lt;img src="https://img.shields.io/github/v/release/lablabs/ansible-role-rke2" alt="Last version"&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href="https://galaxy.ansible.com/lablabs/rke2" target="_blank" rel="noopener"&gt;&lt;img src="https://img.shields.io/ansible/role/d/lablabs/rke2" alt="Galaxy Downloads"&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href="https://github.com/lablabs/ansible-role-rke2/issues" target="_blank" rel="noopener"&gt;&lt;img src="https://img.shields.io/github/issues-raw/lablabs/ansible-role-rke2" alt="issues"&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href="https://github.com/lablabs/ansible-role-rke2/pulls" target="_blank" rel="noopener"&gt;&lt;img src="https://img.shields.io/github/issues-pr/lablabs/ansible-role-rke2" alt="pull requests"&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;a href="https://galaxy.ansible.com/lablabs/nexus_config" target="_blank" rel="noopener"&gt;nexus_config&lt;/a&gt;&lt;/td&gt;
+&lt;td style="text-align: left"&gt;&lt;a href="https://github.com/lablabs/ansible-role-nexus_config" target="_blank" rel="noopener"&gt;&lt;img src="https://img.shields.io/github/v/release/lablabs/ansible-role-nexus_config" alt="Last version"&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href="https://galaxy.ansible.com/lablabs/nexus_config" target="_blank" rel="noopener"&gt;&lt;img src="https://img.shields.io/ansible/role/d/monolithprojects/nexus_config" alt="Galaxy Downloads"&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href="https://github.com/lablabs/ansible-role-nexus_config/issues" target="_blank" rel="noopener"&gt;&lt;img src="https://img.shields.io/github/issues-raw/lablabs/ansible-role-nexus_config" alt="issues"&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href="https://github.com/lablabs/ansible-role-nexus_config/pulls" target="_blank" rel="noopener"&gt;&lt;img src="https://img.shields.io/github/issues-pr/lablabs/ansible-role-nexus_config" alt="pull requests"&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style="text-align: left"&gt;Collection name&lt;/th&gt;
+&lt;th style="text-align: left"&gt;Linting Action&lt;/th&gt;
+&lt;th&gt;Releaseing Action&lt;/th&gt;
+&lt;th&gt;Issues&lt;/th&gt;
+&lt;th&gt;Pull requests&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style="text-align: left"&gt;&lt;a href="https://galaxy.ansible.com/lablabs/wireguard" target="_blank" rel="noopener"&gt;wireguard&lt;/a&gt;&lt;/td&gt;
+&lt;td style="text-align: left"&gt;&lt;a href="https://github.com/lablabs/ansible-collection-wireguard/actions/workflows/lint.yaml" target="_blank" rel="noopener"&gt;&lt;img src="https://github.com/lablabs/ansible-collection-wireguard/actions/workflows/molecule.yaml/badge.svg" alt="Molecule Test"&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href="https://github.com/lablabs/ansible-collection-wireguard/actions/workflows/galaxy.yaml" target="_blank" rel="noopener"&gt;&lt;img src="https://github.com/lablabs/ansible-collection-wireguard/actions/workflows/galaxy.yaml/badge.svg" alt="Release to Ansible Galaxy"&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href="https://github.com/lablabs/ansible-collection-wireguard/issues" target="_blank" rel="noopener"&gt;&lt;img src="https://img.shields.io/github/issues-raw/lablabs/ansible-collection-wireguard" alt="issues"&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href="https://github.com/lablabs/ansible-collection-wireguard/pulls" target="_blank" rel="noopener"&gt;&lt;img src="https://img.shields.io/github/issues-pr/lablabs/ansible-collection-wireguard" alt="pull requests"&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h3 id="docker-compose"&gt;Docker-compose&lt;/h3&gt;
+&lt;p&gt;List of docker-compose projects. It includes weekley &lt;code&gt;docker-compose up&lt;/code&gt; test.&lt;/p&gt;</description></item><item><title>CyberGhost</title><link>https://monolithprojects.github.io/notes/linux/vpn/cyberghost/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://monolithprojects.github.io/notes/linux/vpn/cyberghost/</guid><description>&lt;div class="note-card "&gt;
+&lt;div class="item"&gt;
+&lt;h5 class="note-title"&gt;&lt;span&gt;CyberGhost in Fedora&lt;/span&gt;&lt;/h5&gt;
+&lt;div class="card"&gt;
+&lt;div class="card-body"&gt;&lt;p&gt;Currently the installation script for Cyber Ghost VPN client does not support Fedora 32. Since the &lt;code&gt;cyberghostvpn&lt;/code&gt; client works
+on Fedora 32 just fine, let see how we can make the installation to work.&lt;/p&gt;
+&lt;h3 id="how-to-do-it"&gt;How to do it&lt;/h3&gt;
+&lt;p&gt;Go to &lt;a href="https://my.cyberghostvpn.com/en_US/devices/desktop/add-linux" target="_blank" rel="noopener"&gt;Cyber Ghost&lt;/a&gt; web page and download the installation package for Fedora 31.
+Unpack the Zip file. Open the &lt;code&gt;install.sh&lt;/code&gt; script. Go to the line number 63 and paste the code snippet right after the &lt;code&gt;elif&lt;/code&gt; condition which is checking if you are running Fedora 31. With this new &lt;code&gt;elif&lt;/code&gt; condition you will tell the script that it is totally OK to have Fedora 32 and glibc v2.31 :-).&lt;/p&gt;</description></item><item><title>Fish Variables</title><link>https://monolithprojects.github.io/notes/fish/basic/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://monolithprojects.github.io/notes/fish/basic/</guid><description>&lt;!-- Variable --&gt;
+&lt;div class="note-card "&gt;
+&lt;div class="item"&gt;
+&lt;h5 class="note-title"&gt;&lt;span&gt;Environmant Variable&lt;/span&gt;&lt;/h5&gt;
+&lt;div class="card"&gt;
+&lt;div class="card-body"&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-fish" data-lang="fish"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;set&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;-gx&lt;/span&gt; KUBECONFIG ~/.kube/my-cluster
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- Condition --&gt;
+&lt;div class="note-card "&gt;
+&lt;div class="item"&gt;
+&lt;h5 class="note-title"&gt;&lt;span&gt;Remove Env variable&lt;/span&gt;&lt;/h5&gt;
+&lt;div class="card"&gt;
+&lt;div class="card-body"&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-fish" data-lang="fish"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;set&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;-e&lt;/span&gt; KUBECONFIG
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description></item><item><title>Hacks</title><link>https://monolithprojects.github.io/notes/kubernetes/basic/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://monolithprojects.github.io/notes/kubernetes/basic/</guid><description>&lt;!-- Variable --&gt;
+&lt;div class="note-card "&gt;
+&lt;div class="item"&gt;
+&lt;h5 class="note-title"&gt;&lt;span&gt;Serial tasks&lt;/span&gt;&lt;/h5&gt;
+&lt;div class="card"&gt;
+&lt;div class="card-body"&gt;&lt;p&gt;Remove a finalizer which got stuck.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;kubectl get ns &amp;lt;namespace name&amp;gt; -ojson | jq &lt;span style="color:#e6db74"&gt;&amp;#39;.spec.finalizers = []&amp;#39;&lt;/span&gt; | kubectl replace --raw &lt;span style="color:#e6db74"&gt;&amp;#34;/api/v1/namespaces/&amp;lt;namespace name&amp;gt;/finalize&amp;#34;&lt;/span&gt; -f -
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description></item><item><title>System</title><link>https://monolithprojects.github.io/notes/linux/system/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://monolithprojects.github.io/notes/linux/system/</guid><description>&lt;!-- Forward Traffic--&gt;
+&lt;div class="note-card "&gt;
+&lt;div class="item"&gt;
+&lt;h5 class="note-title"&gt;&lt;span&gt;Forward from localhost to the outside world&lt;/span&gt;&lt;/h5&gt;
+&lt;div class="card"&gt;
+&lt;div class="card-body"&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo socat -d -d TCP-L:8500,bind&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&amp;lt;node IP address&amp;gt;,fork TCP:localhost:8500
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- Fedora Upgrade --&gt;
+&lt;div class="note-card "&gt;
+&lt;div class="item"&gt;
+&lt;h5 class="note-title"&gt;&lt;span&gt;Fedora Upgrade&lt;/span&gt;&lt;/h5&gt;
+&lt;div class="card"&gt;
+&lt;div class="card-body"&gt;&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;First run this command and reboot your computer:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo dnf upgrade --refresh
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Install the dnf-plugin-system-upgrade package if it is not currently installed:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo dnf install dnf-plugin-system-upgrade
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Download the updated packages:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo dnf system-upgrade download --refresh --releasever&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&amp;lt;your destination version&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If some of your packages have unsatisfied dependencies, the upgrade will refuse to continue until you run it again with an extra &lt;code&gt;--allowerasing&lt;/code&gt; option.&lt;/p&gt;</description></item><item><title>Workarounds</title><link>https://monolithprojects.github.io/notes/ansible/basic/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://monolithprojects.github.io/notes/ansible/basic/</guid><description>&lt;!-- Variable --&gt;
+&lt;div class="note-card "&gt;
+&lt;div class="item"&gt;
+&lt;h5 class="note-title"&gt;&lt;span&gt;Serial tasks&lt;/span&gt;&lt;/h5&gt;
+&lt;div class="card"&gt;
+&lt;div class="card-body"&gt;&lt;p&gt;Ansible does not have a out-of-the-box feature which could make possible to run block of tasks in a serial way (the same as you can do with tasks in a playbooks).
+To owercome this disadvantage you can include the file with serial tasks like this:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-yaml" data-lang="yaml"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;- &lt;span style="color:#f92672"&gt;name&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;Run tasks per node in serial mode&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;ansible.builtin.include_tasks&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;serial_pipe.yml&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;with_items&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#34;{{ groups.all }}&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;loop_control&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;loop_var&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;_host_item&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;when&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;hostvars[_host_item].inventory_hostname == inventory_hostname&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description></item><item><title>Prometheus</title><link>https://monolithprojects.github.io/notes/monitorng/prometheus/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://monolithprojects.github.io/notes/monitorng/prometheus/</guid><description>&lt;h1 id="prometheus-notes"&gt;Prometheus Notes&lt;/h1&gt;
+&lt;!-- Forward Traffic--&gt;
+&lt;div class="note-card "&gt;
+&lt;div class="item"&gt;
+&lt;h5 class="note-title"&gt;&lt;span&gt;PromQL return 0 instead of ‘no data’&lt;/span&gt;&lt;/h5&gt;
+&lt;div class="card"&gt;
+&lt;div class="card-body"&gt;&lt;p&gt;Add following to the end of your query&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-promql" data-lang="promql"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;OR &lt;span style="color:#66d9ef"&gt;on&lt;/span&gt;&lt;span style="color:#f92672"&gt;()&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;vector&lt;/span&gt;&lt;span style="color:#f92672"&gt;(&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;&lt;span style="color:#f92672"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Prometheus uses label matching in expressions. If your expression returns anything with labels, it won&amp;rsquo;t match the time series generated by vector(0). In order to make this possible, it&amp;rsquo;s necessary to tell Prometheus explicitly to not trying to match any labels by adding on().&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description></item></channel></rss>

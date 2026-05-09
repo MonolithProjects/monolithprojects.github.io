@@ -1,53 +1,98 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Notes on Satellite</title><link>https://monolithprojects.github.io/notes/</link><description>Recent content in Notes on Satellite</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 08 Jun 2010 08:06:25 +0600</lastBuildDate><atom:link href="https://monolithprojects.github.io/notes/index.xml" rel="self" type="application/rss+xml"/><item><title>Resultados de Búsqueda</title><link>https://monolithprojects.github.io/search/</link><pubDate>Tue, 08 Jun 2010 08:06:25 +0600</pubDate><guid>https://monolithprojects.github.io/search/</guid><description>Este archivo existe únicamente para responder a la URL /search con la plantilla de diseño search relacionada.
-No se muestra ningún contenido aquí, todo el contenido se basa en la plantilla layouts/page/search.html
-Establecer una prioridad muy baja en el mapa del sitio le dirá a los motores de búsqueda que éste no es un contenido importante.
-Esta implementación utiliza Fusejs, jquery y mark.js
-Configuración inicial La búsqueda depende del tipo de contenido de salida adicional de JSON en config.</description></item><item><title>Search Results</title><link>https://monolithprojects.github.io/search/</link><pubDate>Tue, 08 Jun 2010 08:06:25 +0600</pubDate><guid>https://monolithprojects.github.io/search/</guid><description>This file exists solely to respond to /search URL with the related search layout template.
-No content shown here is rendered, all content is based in the template layouts/page/search.html
-Setting a very low sitemap priority will tell search engines this is not important content.
-This implementation uses Fusejs, jquery and mark.js
-Initial setup Search depends on additional output content type of JSON in config.toml ``` [outputs] home = [&amp;ldquo;HTML&amp;rdquo;, &amp;ldquo;JSON&amp;rdquo;] ```</description></item><item><title>Search Results</title><link>https://monolithprojects.github.io/search/</link><pubDate>Tue, 08 Jun 2010 08:06:25 +0600</pubDate><guid>https://monolithprojects.github.io/search/</guid><description>This file exists solely to respond to /search URL with the related search layout template.
-No content shown here is rendered, all content is based in the template layouts/page/search.html
-Setting a very low sitemap priority will tell search engines this is not important content.
-This implementation uses Fusejs, jquery and mark.js
-Initial setup Search depends on additional output content type of JSON in config.toml ``` [outputs] home = [&amp;ldquo;HTML&amp;rdquo;, &amp;ldquo;JSON&amp;rdquo;] ```</description></item><item><title>Search Results</title><link>https://monolithprojects.github.io/search/</link><pubDate>Tue, 08 Jun 2010 08:06:25 +0600</pubDate><guid>https://monolithprojects.github.io/search/</guid><description>This file exists solely to respond to /search URL with the related search layout template.
-No content shown here is rendered, all content is based in the template layouts/page/search.html
-Setting a very low sitemap priority will tell search engines this is not important content.
-This implementation uses Fusejs, jquery and mark.js
-Initial setup Search depends on additional output content type of JSON in config.toml ``` [outputs] home = [&amp;ldquo;HTML&amp;rdquo;, &amp;ldquo;JSON&amp;rdquo;] ```</description></item><item><title>Search Results</title><link>https://monolithprojects.github.io/search/</link><pubDate>Tue, 08 Jun 2010 08:06:25 +0600</pubDate><guid>https://monolithprojects.github.io/search/</guid><description>This file exists solely to respond to /search URL with the related search layout template.
-No content shown here is rendered, all content is based in the template layouts/page/search.html
-Setting a very low sitemap priority will tell search engines this is not important content.
-This implementation uses Fusejs, jquery and mark.js
-Initial setup Search depends on additional output content type of JSON in config.toml ``` [outputs] home = [&amp;ldquo;HTML&amp;rdquo;, &amp;ldquo;JSON&amp;rdquo;] ```</description></item><item><title>Search Results</title><link>https://monolithprojects.github.io/search/</link><pubDate>Tue, 08 Jun 2010 08:06:25 +0600</pubDate><guid>https://monolithprojects.github.io/search/</guid><description>This file exists solely to respond to /search URL with the related search layout template.
-No content shown here is rendered, all content is based in the template layouts/page/search.html
-Setting a very low sitemap priority will tell search engines this is not important content.
-This implementation uses Fusejs, jquery and mark.js
-Initial setup Search depends on additional output content type of JSON in config.toml ``` [outputs] home = [&amp;ldquo;HTML&amp;rdquo;, &amp;ldquo;JSON&amp;rdquo;] ```</description></item><item><title>Search Results</title><link>https://monolithprojects.github.io/search/</link><pubDate>Tue, 08 Jun 2010 08:06:25 +0600</pubDate><guid>https://monolithprojects.github.io/search/</guid><description>This file exists solely to respond to /search URL with the related search layout template.
-No content shown here is rendered, all content is based in the template layouts/page/search.html
-Setting a very low sitemap priority will tell search engines this is not important content.
-This implementation uses Fusejs, jquery and mark.js
-Initial setup Search depends on additional output content type of JSON in config.toml ``` [outputs] home = [&amp;ldquo;HTML&amp;rdquo;, &amp;ldquo;JSON&amp;rdquo;] ```</description></item><item><title>Search Results</title><link>https://monolithprojects.github.io/search/</link><pubDate>Tue, 08 Jun 2010 08:06:25 +0600</pubDate><guid>https://monolithprojects.github.io/search/</guid><description>This file exists solely to respond to /search URL with the related search layout template.
-No content shown here is rendered, all content is based in the template layouts/page/search.html
-Setting a very low sitemap priority will tell search engines this is not important content.
-This implementation uses Fusejs, jquery and mark.js
-Initial setup Search depends on additional output content type of JSON in config.toml ``` [outputs] home = [&amp;ldquo;HTML&amp;rdquo;, &amp;ldquo;JSON&amp;rdquo;] ```</description></item><item><title>Search Results</title><link>https://monolithprojects.github.io/search/</link><pubDate>Tue, 08 Jun 2010 08:06:25 +0600</pubDate><guid>https://monolithprojects.github.io/search/</guid><description>This file exists solely to respond to /search URL with the related search layout template.
-No content shown here is rendered, all content is based in the template layouts/page/search.html
-Setting a very low sitemap priority will tell search engines this is not important content.
-This implementation uses Fusejs, jquery and mark.js
-Initial setup Search depends on additional output content type of JSON in config.toml ``` [outputs] home = [&amp;ldquo;HTML&amp;rdquo;, &amp;ldquo;JSON&amp;rdquo;] ```</description></item><item><title>Search Results</title><link>https://monolithprojects.github.io/search/</link><pubDate>Tue, 08 Jun 2010 08:06:25 +0600</pubDate><guid>https://monolithprojects.github.io/search/</guid><description>This file exists solely to respond to /search URL with the related search layout template.
-No content shown here is rendered, all content is based in the template layouts/page/search.html
-Setting a very low sitemap priority will tell search engines this is not important content.
-This implementation uses Fusejs, jquery and mark.js
-Initial setup Search depends on additional output content type of JSON in config.toml ``` [outputs] home = [&amp;ldquo;HTML&amp;rdquo;, &amp;ldquo;JSON&amp;rdquo;] ```</description></item><item><title>Search Results</title><link>https://monolithprojects.github.io/search/</link><pubDate>Tue, 08 Jun 2010 08:06:25 +0600</pubDate><guid>https://monolithprojects.github.io/search/</guid><description>This file exists solely to respond to /search URL with the related search layout template.
-No content shown here is rendered, all content is based in the template layouts/page/search.html
-Setting a very low sitemap priority will tell search engines this is not important content.
-This implementation uses Fusejs, jquery and mark.js
-Initial setup Search depends on additional output content type of JSON in config.toml ``` [outputs] home = [&amp;ldquo;HTML&amp;rdquo;, &amp;ldquo;JSON&amp;rdquo;] ```</description></item><item><title>অনুসন্ধানের ফলাফল</title><link>https://monolithprojects.github.io/search/</link><pubDate>Tue, 08 Jun 2010 08:06:25 +0600</pubDate><guid>https://monolithprojects.github.io/search/</guid><description>This file exists solely to respond to /search URL with the related search layout template.
-No content shown here is rendered, all content is based in the template layouts/page/search.html
-Setting a very low sitemap priority will tell search engines this is not important content.
-This implementation uses Fusejs, jquery and mark.js
-Initial setup Search depends on additional output content type of JSON in config.toml ``` [outputs] home = [&amp;ldquo;HTML&amp;rdquo;, &amp;ldquo;JSON&amp;rdquo;] ```</description></item><item><title>Search Results</title><link>https://monolithprojects.github.io/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://monolithprojects.github.io/search/</guid><description>This file exists solely to respond to /search URL with the related search layout template.
-No content shown here is rendered, all content is based in the template layouts/page/search.html
-Setting a very low sitemap priority will tell search engines this is not important content.
-This implementation uses Fusejs, jquery and mark.js
-Initial setup Search depends on additional output content type of JSON in config.toml ``` [outputs] home = [&amp;ldquo;HTML&amp;rdquo;, &amp;ldquo;JSON&amp;rdquo;] ```</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Notes on Satellite</title><link>https://monolithprojects.github.io/notes/</link><description>Recent content in Notes on Satellite</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 08 Jun 2010 08:06:25 +0600</lastBuildDate><atom:link href="https://monolithprojects.github.io/notes/index.xml" rel="self" type="application/rss+xml"/><item><title>CyberGhost</title><link>https://monolithprojects.github.io/notes/linux/vpn/cyberghost/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://monolithprojects.github.io/notes/linux/vpn/cyberghost/</guid><description>&lt;div class="note-card "&gt;
+&lt;div class="item"&gt;
+&lt;h5 class="note-title"&gt;&lt;span&gt;CyberGhost in Fedora&lt;/span&gt;&lt;/h5&gt;
+&lt;div class="card"&gt;
+&lt;div class="card-body"&gt;&lt;p&gt;Currently the installation script for Cyber Ghost VPN client does not support Fedora 32. Since the &lt;code&gt;cyberghostvpn&lt;/code&gt; client works
+on Fedora 32 just fine, let see how we can make the installation to work.&lt;/p&gt;
+&lt;h3 id="how-to-do-it"&gt;How to do it&lt;/h3&gt;
+&lt;p&gt;Go to &lt;a href="https://my.cyberghostvpn.com/en_US/devices/desktop/add-linux" target="_blank" rel="noopener"&gt;Cyber Ghost&lt;/a&gt; web page and download the installation package for Fedora 31.
+Unpack the Zip file. Open the &lt;code&gt;install.sh&lt;/code&gt; script. Go to the line number 63 and paste the code snippet right after the &lt;code&gt;elif&lt;/code&gt; condition which is checking if you are running Fedora 31. With this new &lt;code&gt;elif&lt;/code&gt; condition you will tell the script that it is totally OK to have Fedora 32 and glibc v2.31 :-).&lt;/p&gt;</description></item><item><title>Fish Variables</title><link>https://monolithprojects.github.io/notes/fish/basic/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://monolithprojects.github.io/notes/fish/basic/</guid><description>&lt;!-- Variable --&gt;
+&lt;div class="note-card "&gt;
+&lt;div class="item"&gt;
+&lt;h5 class="note-title"&gt;&lt;span&gt;Environmant Variable&lt;/span&gt;&lt;/h5&gt;
+&lt;div class="card"&gt;
+&lt;div class="card-body"&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-fish" data-lang="fish"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;set&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;-gx&lt;/span&gt; KUBECONFIG ~/.kube/my-cluster
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- Condition --&gt;
+&lt;div class="note-card "&gt;
+&lt;div class="item"&gt;
+&lt;h5 class="note-title"&gt;&lt;span&gt;Remove Env variable&lt;/span&gt;&lt;/h5&gt;
+&lt;div class="card"&gt;
+&lt;div class="card-body"&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-fish" data-lang="fish"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;set&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;-e&lt;/span&gt; KUBECONFIG
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description></item><item><title>Hacks</title><link>https://monolithprojects.github.io/notes/kubernetes/basic/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://monolithprojects.github.io/notes/kubernetes/basic/</guid><description>&lt;!-- Variable --&gt;
+&lt;div class="note-card "&gt;
+&lt;div class="item"&gt;
+&lt;h5 class="note-title"&gt;&lt;span&gt;Serial tasks&lt;/span&gt;&lt;/h5&gt;
+&lt;div class="card"&gt;
+&lt;div class="card-body"&gt;&lt;p&gt;Remove a finalizer which got stuck.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;kubectl get ns &amp;lt;namespace name&amp;gt; -ojson | jq &lt;span style="color:#e6db74"&gt;&amp;#39;.spec.finalizers = []&amp;#39;&lt;/span&gt; | kubectl replace --raw &lt;span style="color:#e6db74"&gt;&amp;#34;/api/v1/namespaces/&amp;lt;namespace name&amp;gt;/finalize&amp;#34;&lt;/span&gt; -f -
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description></item><item><title>System</title><link>https://monolithprojects.github.io/notes/linux/system/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://monolithprojects.github.io/notes/linux/system/</guid><description>&lt;!-- Forward Traffic--&gt;
+&lt;div class="note-card "&gt;
+&lt;div class="item"&gt;
+&lt;h5 class="note-title"&gt;&lt;span&gt;Forward from localhost to the outside world&lt;/span&gt;&lt;/h5&gt;
+&lt;div class="card"&gt;
+&lt;div class="card-body"&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo socat -d -d TCP-L:8500,bind&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&amp;lt;node IP address&amp;gt;,fork TCP:localhost:8500
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- Fedora Upgrade --&gt;
+&lt;div class="note-card "&gt;
+&lt;div class="item"&gt;
+&lt;h5 class="note-title"&gt;&lt;span&gt;Fedora Upgrade&lt;/span&gt;&lt;/h5&gt;
+&lt;div class="card"&gt;
+&lt;div class="card-body"&gt;&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;First run this command and reboot your computer:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo dnf upgrade --refresh
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Install the dnf-plugin-system-upgrade package if it is not currently installed:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo dnf install dnf-plugin-system-upgrade
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Download the updated packages:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo dnf system-upgrade download --refresh --releasever&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&amp;lt;your destination version&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If some of your packages have unsatisfied dependencies, the upgrade will refuse to continue until you run it again with an extra &lt;code&gt;--allowerasing&lt;/code&gt; option.&lt;/p&gt;</description></item><item><title>Workarounds</title><link>https://monolithprojects.github.io/notes/ansible/basic/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://monolithprojects.github.io/notes/ansible/basic/</guid><description>&lt;!-- Variable --&gt;
+&lt;div class="note-card "&gt;
+&lt;div class="item"&gt;
+&lt;h5 class="note-title"&gt;&lt;span&gt;Serial tasks&lt;/span&gt;&lt;/h5&gt;
+&lt;div class="card"&gt;
+&lt;div class="card-body"&gt;&lt;p&gt;Ansible does not have a out-of-the-box feature which could make possible to run block of tasks in a serial way (the same as you can do with tasks in a playbooks).
+To owercome this disadvantage you can include the file with serial tasks like this:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-yaml" data-lang="yaml"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;- &lt;span style="color:#f92672"&gt;name&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;Run tasks per node in serial mode&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;ansible.builtin.include_tasks&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;serial_pipe.yml&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;with_items&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#34;{{ groups.all }}&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;loop_control&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;loop_var&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;_host_item&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#f92672"&gt;when&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;hostvars[_host_item].inventory_hostname == inventory_hostname&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description></item><item><title>Prometheus</title><link>https://monolithprojects.github.io/notes/monitorng/prometheus/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://monolithprojects.github.io/notes/monitorng/prometheus/</guid><description>&lt;h1 id="prometheus-notes"&gt;Prometheus Notes&lt;/h1&gt;
+&lt;!-- Forward Traffic--&gt;
+&lt;div class="note-card "&gt;
+&lt;div class="item"&gt;
+&lt;h5 class="note-title"&gt;&lt;span&gt;PromQL return 0 instead of ‘no data’&lt;/span&gt;&lt;/h5&gt;
+&lt;div class="card"&gt;
+&lt;div class="card-body"&gt;&lt;p&gt;Add following to the end of your query&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-promql" data-lang="promql"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;OR &lt;span style="color:#66d9ef"&gt;on&lt;/span&gt;&lt;span style="color:#f92672"&gt;()&lt;/span&gt; &lt;span style="color:#66d9ef"&gt;vector&lt;/span&gt;&lt;span style="color:#f92672"&gt;(&lt;/span&gt;&lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;&lt;span style="color:#f92672"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Prometheus uses label matching in expressions. If your expression returns anything with labels, it won&amp;rsquo;t match the time series generated by vector(0). In order to make this possible, it&amp;rsquo;s necessary to tell Prometheus explicitly to not trying to match any labels by adding on().&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description></item></channel></rss>
